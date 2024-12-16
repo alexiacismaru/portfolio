@@ -1,67 +1,124 @@
-import { Footer, Header } from "./Navigation";
+const main = {
+    border: '4px solid blue', 
+    borderRadius: '7px'
+}
+
+const navigationMenu = {
+    backgroundColor: 'blue', 
+    display: 'flex', 
+    justifyContent: 'space-between'
+}
+
+const navButton = {
+    border: '1px solid white', 
+    backgroundColor: 'blue', 
+    width: '15px',
+    color: 'white', 
+    margin: '0.1rem'
+}
+
+const closeButton = {
+    border: '1px solid white', 
+    backgroundColor: 'red', 
+    width: '15px',
+    color: 'white', 
+    margin: '0.1rem'
+}
+
+const work = {
+    display: 'flex', 
+    alignItems: 'center', 
+}
+
+const img = {
+    width: '5rem',
+    height: '5rem'
+}
+
+const a = {
+    color: 'black',
+}
+
+const mocknav = {
+    display: 'flex', 
+    justifyContent: 'space-between',
+    width: '20%', 
+    marginLeft: '1rem', 
+    backgroundColor: 'lightgray',
+}
 
 export default function Work() {
     return (
-        <>
-            <Header/>
-            <main> 
-                <div className="cost-monitoring">
-                    <h2><a href="/cost-monitoring">Cloud and Cost Monitoring</a></h2>
-                    <img></img>
-                    <p>Cloud monitoring and cost management using machine learning</p> 
+        <> 
+            <main style={main}> 
+                <div className="navigation-menu" style={navigationMenu}>
+                    <div style={{display:'flex', alignItems: 'center'}}>
+                        <img src="https://i.imgur.com/RjMRqmK.png" alt='folder icon' style={{width: '25px', height: '25px'}}></img>
+                        <p style={{color: 'white'}}>C:\Work</p>
+                    </div>
+                    <div>
+                        <button style={navButton}>_</button>
+                        <button style={navButton}>O</button>
+                        <button style={closeButton}>X</button>
+                    </div> 
                 </div>
-                <div className="chatbot">
-                    <h2><a href="/chatbot">Data Science Chatbot</a></h2>
-                    <img></img>
-                    <p>A data-analyst chatbot using GPT-3.5 and LangChain, bridging the gap between data science and end-users.</p>
+
+                <div style={{backgroundColor: 'lightgray'}}> 
+                    <div className="mocknav" style={mocknav}>
+                        <p>File</p>
+                        <p>Edit</p>
+                        <p>View</p>
+                        <p>Favorites</p>
+                        <p>Tools</p>
+                        <p>Help</p>
+                    </div>
                 </div>
-                <div className="exago">
-                    <h2><a href="/exago">Exago</a></h2>
-                    <img></img>
-                    <p>An interactive EXAGO board that uses game strategies to play against the user.</p>
+
+                <div className="cost-monitoring" style={work}>
+                    <img src="https://i.imgur.com/WLQXHbd.png" alt="icon" style={img}></img>
+                    <a href="/cost-monitoring" style={a}>Cloud and Cost Monitoring</a>
                 </div>
-                <div className="music-library">
-                    <h2><a href="/music-library">Music Library</a></h2>
-                    <img></img>
-                    <p>A platform where users can manage their music collection by adding, deleting, or updating their artists, songs, or albums.</p>
+                <div className="chatbot" style={work}>
+                    <img src="https://i.imgur.com/WLQXHbd.png" alt="icon" style={img}></img>
+                    <a href="/chatbot" style={a}>Data Science Chatbot</a> 
                 </div>
-                <div className="plantify">
-                    <h2><a href="/plantify">Plantify</a></h2>
-                    <img></img>
-                    <p>A 3D-printed water pot that calculates the plant's water needs based on environmental factors.</p>
+                <div className="exago" style={work}>
+                    <img src="https://i.imgur.com/WLQXHbd.png" alt="icon" style={img}></img>
+                    <a href="/exago" style={a}>Exago</a> 
                 </div>
-                <div className="predict-pollution">
-                    <h2><a href="/predict-pollution">Predicting Pollution</a></h2>
-                    <img></img>
-                    <p>A platform where Belgian residents can check their area's pollution and traffic levels.</p>
+                <div className="music-library" style={work}>
+                    <img src="https://i.imgur.com/WLQXHbd.png" alt="icon" style={img}></img>
+                    <a href="/music-library" style={a}>Music Library</a>
                 </div>
-                <div className="backgammon">
-                    <h2><a href="/backgammon">Backgammon</a></h2>
-                    <img></img>
-                    <p>An ASCII backgammon game that plays against the user on the console.</p>
+                <div className="plantify" style={work}>
+                    <img src="https://i.imgur.com/WLQXHbd.png" alt="icon" style={img}></img>
+                    <a href="/plantify" style={a}>Plantify</a> 
                 </div>
-                <div className="youth-council">
-                    <h2><a href="/youth-council">Youth Council</a></h2>
-                    <img></img>
-                    <p>A platform for children to express their opinions on their municipality.</p>
+                <div className="predict-pollution" style={work}>
+                    <img src="https://i.imgur.com/WLQXHbd.png" alt="icon" style={img}></img>
+                    <a href="/predict-pollution" style={a}>Predicting Pollution</a> 
                 </div>
-                <div className="reinforcement-learning">
-                    <h2><a href="/reinforcement-learning">Reinforcement Learning</a></h2>
-                    <img></img>
-                    <p>Experimented with reinforcement learning algorithms in the Frozen Lake and Cartpole projects.</p>
+                <div className="backgammon" style={work}>
+                    <img src="https://i.imgur.com/WLQXHbd.png" alt="icon" style={img}></img>
+                    <a href="/backgammon" style={a}>Backgammon</a> 
                 </div>
-                <div className="soundboard">
-                    <h2><a href="/soundboard">Soundboard</a></h2>
-                    <img></img>
-                    <p>A website that allows users to play, stop, add, or delete sounds to create a customizable soundboard. </p>
+                <div className="youth-council" style={work}>
+                    <img src="https://i.imgur.com/WLQXHbd.png" alt="icon" style={img}></img>
+                    <a href="/youth-council" style={a}>Youth Council</a> 
+                </div>
+                <div className="reinforcement-learning" style={work}>
+                    <img src="https://i.imgur.com/WLQXHbd.png" alt="icon" style={img}></img>
+                    <a href="/reinforcement-learning" style={a}>Reinforcement Learning</a> 
+                </div>
+                <div className="soundboard" style={work}>
+                    <img src="https://i.imgur.com/WLQXHbd.png" alt="icon" style={img}></img>
+                    <a href="/soundboard" style={a}>Soundboard</a> 
                 </div> 
-                <div>
-                    <h2><a href="/one-armed-bandit">One Armed Bandit</a></h2>
-                    <img></img>
-                    <p>A slot machine game on an Arduino microcontroller with LED indicators and sound effects to mimic the one-armed bandit game.</p>
+                <div className="onearmedbandit" style={work}>
+                    <img src="https://i.imgur.com/WLQXHbd.png" alt="icon" style={img}></img>
+                    <a href="/one-armed-bandit" style={a}>One Armed Bandit</a>
                 </div>
-            </main>
-            <Footer/>
+            </main> 
         </>
     )
 }
