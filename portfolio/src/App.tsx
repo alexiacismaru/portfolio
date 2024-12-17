@@ -15,6 +15,7 @@ import Soundboard from './components/Soundboard.tsx';
 import Work from './components/Work.tsx';
 import Chatbot from './components/Chatbot.tsx';
 import OneArmedBandit from './components/OneArmedBandit.tsx';
+import StartMenu from './components/StartMenu.tsx';
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ function App() {
                     <Route path="/work" element={<Work />} />
                     <Route path="/chatbot" element={<Chatbot />} />
                     <Route path="/one-armed-bandit" element={<OneArmedBandit />} />
+                    <Route path="/menu" element={<StartMenu />} />
                 </Routes>
             </BrowserRouter>
         </QueryClientProvider>

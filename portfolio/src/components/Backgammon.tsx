@@ -36,8 +36,8 @@ const mocknav = {
 export default function Backgammon() {
     return (
         <>  
-                    <main style={main}>
-            <div className="navigation-menu" style={navigationMenu}>
+            <main style={main}>
+                <div className="navigation-menu" style={navigationMenu}>
                     <div style={{display:'flex', alignItems: 'center'}}>
                         <img src="https://i.imgur.com/RjMRqmK.png" alt='folder icon' style={{width: '25px', height: '25px'}}></img>
                         <p style={{color: 'white'}}>C:\Work\backgammon</p>
