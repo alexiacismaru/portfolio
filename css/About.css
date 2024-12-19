@@ -1,0 +1,12 @@
+#about>img{
+    width: 25px;
+    height: 25px;
+}
+
+#img {
+    height: 1rem;
+}
+
+#about>p{
+    font-size: 1.5em;
+}

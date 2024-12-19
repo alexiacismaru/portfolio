@@ -1,13 +1,120 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">  
+        <title>Alexia Cismaru</title>
+        <link href="./css/Index.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <main>
+        <div style="bottom: 70%; right: 41%;">
+            <button>
+                <img src="https://icons.iconarchive.com/icons/dtafalonso/modern-xp/512/ModernXP-16-Folder-Documents-icon.png"/>
+                <p>Work</p>
+            </button>
+        </div>
+        <div style="bottom: 70%; right: 35%;">
+            <button>
+                <img src="https://img.utdstc.com/icon/711/67e/71167eea4aa337e9bb351a6b5f1b8268ad2bd0fb113f327c3dd4577e9ce63378:200"/>
+                <p>soundboard</p>
+            </button>
+        </div>
+        <div style="bottom: 70%; right: 91%;">
+            <button>
+                <img src="./resources/download.png"/>
+                <p>chatbot</p>
+            </button>
+        </div>
+        <div style="bottom: 58%; right: 90%;">
+            <button>
+                <img src="./resources/png-clipart-windows-live-for-xp-music-folder-icon-thumbnail-removebg-preview.png"/>
+                <p>music_library</p>
+            </button>
+        </div>
+        <div style="bottom: 70%; right: 28.5%;">
+            <button>
+                <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png"/>
+                <p>backgammon</p>
+            </button>
+        </div>
+        <div style="bottom: 30%; right: 68%">
+            <button>
+                <img src="./resources/download-removebg-preview.png"/>
+                <p>predict_pollution</p>
+            </button>
+        </div>
+        <div style="bottom: 30%; right: 61%">
+            <button>
+                <img src="./resources/alert_icon.png"/>
+                <p>cost_monitoring</p>
+            </button>
+        </div>
+        <div style="bottom: 70%; right: 24%">
+            <button>
+                <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png"/>
+                <p>exago</p>
+            </button>
+        </div>
+        <div style="bottom: 47%; right: 18%">
+            <button>
+                <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png"/>
+                <p>one_armed_bandit</p>
+            </button>
+        </div>
+        <div style="bottom: 45%; right: 76%">
+            <button>
+                <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png"/>
+                <p>plantify</p>
+            </button>
+        </div>
+        <div style="bottom: 82%; right: 27%">
+            <button>
+                <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png"/> 
+                <p>reinforcement_learning</p>
+            </button>
+        </div> 
+        <div style="bottom: 35%; right: 19%">
+            <button>
+                <img src="./resources/images-removebg-preview.png"/>
+                <p>youth_council</p>
+            </button>
+        </div>
+        <div style="bottom: 30%; right: 76%">
+            <button>
+                <img src="./resources/worddoc-removebg-preview.png"/>
+                <p>License</p>
+            </button>
+        </div>
+        <div style="bottom: 47%; right: 13%">
+            <button>
+                <img src="./resources/worddoc-removebg-preview.png"/>
+                <p>About</p>
+            </button>
+        </div>
+    </main> 
+
+    <footer>
+        <div id="start">
+            <img src="https://seeklogo.com/images/W/windows-xp-icon-logo-E8F84DD6F3-seeklogo.com.png" alt="windows icon"></img>
+            <p>Start</p>
+        </div>
+        <div id="icons"> 
+            <a href="https://medium.com/@alexia.csmr" target="_blank" rel="noopener noreferrer"><AiFillMediumCircle /></a>
+            <a href="https://github.com/alexiacismaru" target="_blank" rel="noopener noreferrer"><SiGithub /></a>
+            <a href="https://www.linkedin.com/in/alexia-cismaru-59a169218/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://www.redbubble.com/people/alexyuh/shop?asc=u" target="_blank" rel="noopener noreferrer"><SiRedbubble /></a>
+
+            <p id="datetime"></p>
+
+            <script>
+                var now = new Date();
+                var time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                document.getElementById("datetime").innerHTML = time;
+            </script>
+        </div> 
+    </footer> 
+    </body>
 </html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true"> 
+        <link href="./css/FileExplorer.css" rel="stylesheet">
+        <link href="./css/Global.css" rel="stylesheet">
+    </head>
+    <body>
+        <main> 
+            <div id="top">
+                <div id='filepath'>
+                    <img src="https://i.imgur.com/RjMRqmK.png" alt='folder icon'></img>
+                    <p>C:\Work</p>
+                </div>
+                <div>
+                    <button>_</button>
+                    <button>🗖</button>
+                    <button>X</button>
+                </div> 
+            </div> 
+            
+            <div id="menu">
+                <div>
+                    <p>File</p>
+                    <p>Edit</p>
+                    <p>View</p>
+                    <p>Insert</p>
+                    <p>Format</p>
+                    <p>Tools</p>
+                    <p>Table</p>
+                    <p>Help</p>
+                </div>  
+                <div id="windows">
+                    <img src="https://seeklogo.com/images/W/windows-xp-icon-logo-E8F84DD6F3-seeklogo.com.png" alt="windows icon"></img>
+                </div> 
+            </div>
+
+            <div id='navigate'>
+                <div id='icon'>
+                    <div>
+                        <img src='./resources/back-button.drawio.png'/>
+                        <p>Back</p>
+                    </div>
+                    <p>&#9660;</p> 
+                </div>
+
+                <div id='icon'>
+                    <div>
+                        <img id='forward' src='./resources/forward-button.drawio.png'/>
+                        <p>Forward</p>
+                    </div>
+                    <p>&#9660;</p> 
+                </div>
+                <div>
+                    <img style="height: 30px; width: 30px;" src="./resources/up.png" alt='up'></img>
+                    <p>Up</p>
+                </div>
+            
+                <div style="border-left: 1px solid rgba(163, 161, 161, 0.566); padding-left: 1rem;">
+                    <img src="./resources/search-removebg-preview.png"/>
+                    <p>Search</p>
+                </div>
+                <div style="border-right: 1px solid rgba(163, 161, 161, 0.566); padding-right: 1rem;">
+                    <img src="./resources/folders.png" alt='folders'></img>
+                    <p>Folders</p>
+                </div> 
+
+                <div id='icon'>
+                    <div>
+                        <img src='./resources/views.png'/>
+                        <p>Views</p>
+                    </div>
+                    <p>&#9660;</p> 
+                </div>
+            </div>   
+
+            <div id="searchbar">
+                <p>Address</p>
+
+                <div id="searchinput">
+                    <div>
+                        <img src=""/>
+                        <p>C:\</p>
+                    </div>
+                    <button id="dropdown">▼</button>
+                </div>
+
+                <div id="go">
+                    <img src=""/>
+                    <p>Go</p>
+                </div>
+            </div>
+
+            <div id='middle'>
+                <section id="sidebar">
+                    <div id="folderssidebar">
+                        <p>Folders</p>
+                        <button>x</button>
+                    </div>
+                    <div>
+                        <img src=""/>
+                        <p>Desktop</p>
+                    </div>
+                    <div>
+                        <button>+</button>
+                        <img/>
+                        <p>My Documents</p>
+                    </div>
+                    <div>
+                        <button>+</button>
+                        <img/>
+                        <p>My Computer</p>
+                    </div>
+                    <div>
+                        <button>-</button>
+                        <img/>
+                        <p>Local Disk (C:)</p>
+                    </div>
+                    <div>
+                        <button>-</button>
+                        <img/>
+                        <p>Work</p>
+                    </div>
+                    <div>
+                        <button>+</button>
+                        <img/>
+                        <p>Cloud and Cost Monitoring</p>
+                    </div>
+                    <div>
+                        <button>+</button>
+                        <img/>
+                        <p>Data Science Chatbot</p>
+                    </div>
+                    <div>
+                        <button>+</button>
+                        <img/>
+                        <p>Exago</p>
+                    </div>
+                    <div>
+                        <button>+</button>
+                        <img/>
+                        <p>Music Library</p>
+                    </div>
+                    <div>
+                        <button>+</button>
+                        <img/>
+                        <p>Plantify</p>
+                    </div>
+                    <div>
+                        <button>+</button>
+                        <img/>
+                        <p>Predicting Pollution</p>
+                    </div>
+                    <div>
+                        <button>+</button>
+                        <img/>
+                        <p>Backgammon</p>
+                    </div>
+                    <div>
+                        <button>+</button>
+                        <img/>
+                        <p>Youth Council</p>
+                    </div>
+                    <div>
+                        <button>+</button>
+                        <img/>
+                        <p>Reinforcement Learning</p>
+                    </div>
+                    <div>
+                        <button>+</button>
+                        <img/>
+                        <p>Soundboard</p>
+                    </div>
+                    <div>
+                        <button>+</button>
+                        <img/>
+                        <p>One Armed Bandit</p>
+                    </div>
+                    <div>
+                        <button>+</button>
+                        <img/>
+                        <p>My Network Places</p>
+                    </div>
+                    <div>
+                        <button> </button>
+                        <img/>
+                        <p>Recicle bin</p>
+                    </div>
+                </section>
+
+                <section id="folders">
+                    <div id='work' className="cost-monitoring">
+                        <img src="./resources/alert_icon.png" alt="icon"></img>
+                        <a href="./CostMonitoring.html">Cloud and Cost Monitoring</a>
+                    </div>
+                    <div className="chatbot" id='work'>
+                        <img src="./resources/download.png" alt="icon"></img>
+                        <a href="./Chatbot.html">Data Science Chatbot</a> 
+                    </div>
+                    <div className="exago" id='work'>
+                        <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png" alt="icon"></img>
+                        <a href="./Exago.html">Exago</a> 
+                    </div>
+                    <div className="music-library" id='work'>
+                        <img src="./resources/png-clipart-windows-live-for-xp-music-folder-icon-thumbnail-removebg-preview.png" alt="icon"></img>
+                        <a href="./MusicLibrary.html">Music Library</a>
+                    </div>
+                    <div className="plantify" id='work'>
+                        <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png" alt="icon"></img>
+                        <a href="./Plantify.html">Plantify</a> 
+                    </div>
+                    <div className="predict-pollution" id='work'>
+                        <img src="./resources/download-removebg-preview.png" alt="icon"></img>
+                        <a href="./PredictPollution.html">Predicting Pollution</a> 
+                    </div>
+                    <div className="backgammon" id='work'>
+                        <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png" alt="icon"></img>
+                        <a href="./Backgammon.html">Backgammon</a> 
+                    </div>
+                    <div className="youth-council" id='work'>
+                        <img src="./resources/images-removebg-preview.png" alt="icon"></img>
+                        <a href="./YouthCouncil.html">Youth Council</a> 
+                    </div>
+                    <div className="reinforcement-learning" id='work'>
+                        <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png" alt="icon"></img>
+                        <a href="./ReinforcementLearning.html">Reinforcement Learning</a> 
+                    </div>
+                    <div className="soundboard" id='work'>
+                        <img src="https://img.utdstc.com/icon/711/67e/71167eea4aa337e9bb351a6b5f1b8268ad2bd0fb113f327c3dd4577e9ce63378:200" alt="icon"></img>
+                        <a href="./Soundboard.html">Soundboard</a> 
+                    </div> 
+                    <div className="onearmedbandit" id='work'>
+                        <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png" alt="icon"></img>
+                        <a href="./OneArmedBandit.html">One Armed Bandit</a>
+                    </div>
+                </section>
+            </div>
+        </main>  
+    </body>
+</html>
