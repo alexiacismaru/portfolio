@@ -59,13 +59,15 @@ main>div>div>button:last-child {
     background-color: #e3dac9;
     width: 100%;
     margin: 0; 
-    font-size: 12px;
+    font-size: 12px; 
+    border-bottom: 1px solid #beb7a9;
+    border-top: 1px solid white;
 }
 
 .mocknav>div {
     display: flex; 
     justify-content: space-around; 
-    width: 20%; 
+    align-items: center;
 }
 
 .mocknav>div>p{
@@ -78,4 +80,12 @@ main>div>div>button:last-child {
     height: 2rem;
     display: flex;
     align-items: center;
+    color: white;
+}
+
+.rectangle { 
+    height: 1.7rem; 
+    box-shadow: 1px 1px #beb7a9;
+    color: #e3dac9;
+    margin: 0.5rem;
 }

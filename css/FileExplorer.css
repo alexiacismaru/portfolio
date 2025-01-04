@@ -55,6 +55,26 @@
 
 #folders {
     width: 70%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+#folders>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    width: 15%;
+}
+
+#folders>div>img {
+    height: 4rem; 
+}
+
+#folders>div>a {
+    text-decoration: none;
+    color: black;
 }
 
 #sidebar>div{
@@ -62,8 +82,7 @@
 }
 
 #sidebar>div>img {
-    height: 24px;
-    width: 24px;
+    height: 30px;
 }
 
 #sidebar>div>button { 
