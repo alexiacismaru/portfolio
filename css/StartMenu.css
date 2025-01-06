@@ -1,12 +1,30 @@
+@font-face {
+    font-family: tahoma;
+    src: url(./resources/windows-xp-tahoma.ttf);
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    text-align: center; 
+    font-family: tahoma;
+    height: 20rem;
+    width: 27rem;
+}
+
+main {
+    border: 4px solid rgba(0, 51, 153, 1);
+    border-radius: 7px; 
+    
+}
+
+
 #top {
-    background: rgb(0, 51, 153);
-    background: linear-gradient(180deg, rgba(0, 51, 153, 1) 36%, rgba(0, 131, 215, 1) 100%);
-    height: 8em;
+    background: linear-gradient(to bottom, #015ab2, #0a90dd); 
 } 
 
 #top>div {
-    display: flex;
-    margin: 1em;
+    display: flex; 
     align-items: center;
 }
 
@@ -78,8 +96,7 @@
 } 
 
 #bottom {
-    background: rgb(45,83,201);
-    background: linear-gradient(0deg, rgba(0, 51, 153, 1) 60%, rgba(0, 131, 215, 1) 100%);display: flex;
+    background: linear-gradient(to bottom, #003c78, #007dc5);
     align-items: center;
     justify-content: right;
 }

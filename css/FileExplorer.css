@@ -28,6 +28,7 @@
     align-items: center;
     border-bottom: 1px solid rgba(163, 161, 161, 0.566);
     border-top: 3px solid rgb(0, 51, 153);
+    padding: 0;
 }
 
 #menu>div {
@@ -94,23 +95,28 @@
     font-weight: 900;
 }
 
-#navigate {
-    display: flex;
-    justify-content: space-between; 
-    background-color: rgb(236, 227, 227);
-    align-items: center;
-    height: 5rem;
+#navigate { 
+    background-color: rgb(236, 227, 227); 
+    height: 3.5rem;
 }
 
-#navigate>div>img { 
-    height: 24px;
-    width: 24px; 
+#navigate>div {
+    display: flex; 
+}
+
+#navigate>div>div {
+    display: flex;
+    border-right: 1px solid grey;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#navigate>div>div>div>img { 
+    height: 2rem;
 }
 
 #navigate>div>div>img {
-    display: flex;
-    height: 24px;
-    width: 24px; 
+    height: 2rem;
 }
 
 #folderssidebar {
@@ -130,13 +136,66 @@
     width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-radius: 7px;
+    justify-content: space-between; 
     border: 1px solid rgba(0, 51, 153, 1);
     padding: 0.3%;
+    height: 16px;
+    align-self: center;
 }
 
 #searchinput>div {
     display: flex;
     align-items: center;
+}
+
+#searchinput>div>img {
+    height: 1rem; 
+}
+
+#searchbar>p {
+    display: flex; 
+    align-items: center; 
+    color: grey; 
+    margin: 0.5rem;
+}
+
+#searchinput>img {
+    height: 1.5rem;
+}
+
+#footer {
+    background-color: rgb(236, 227, 227);
+    height: 1.5rem;
+}
+
+#footer>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer>p {
+    border-right: 1px solid grey;
+    height: 2rem;
+    text-align: left;
+}
+
+#footer>div>img {
+    height: 1.5rem;
+}
+
+#go {
+    display: flex;
+    align-items: center;
+}
+
+#go>img {
+    height: 2rem;
+}
+
+#searchbar>p {
+    display: flex; 
+    align-items: center; 
+    color: grey; 
+    margin: 0.5rem;
 }

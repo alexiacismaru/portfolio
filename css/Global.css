@@ -22,8 +22,7 @@ main>div {
 }
 
 main>div>div>button { 
-    background: rgb(0, 51, 153, 1);
-    background: linear-gradient(307deg, rgba(0, 51, 153, 1) 60%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, #003c78, #007dc5);
     border-radius: 7%;
     border: 1px solid white;
     color: white;
@@ -75,8 +74,7 @@ main>div>div>button:last-child {
 }
 
 #top {
-    background: rgb(0, 51, 153);
-    background: linear-gradient(180deg, rgba(0, 51, 153, 1) 36%, rgba(0, 131, 215, 1) 100%);
+    background: linear-gradient(to bottom, #003c78, #007dc5);
     height: 2rem;
     display: flex;
     align-items: center;

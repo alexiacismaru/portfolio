@@ -1,0 +1,122 @@
+#menu {
+    font-size: 12px;
+    background-color: rgb(236, 227, 227);
+    height: 2.5rem;
+    align-items: center;
+    border-bottom: 1px solid rgba(163, 161, 161, 0.566);
+    border-top: 3px solid rgb(0, 51, 153);
+    padding: 0;
+}
+
+#menu>div {
+    display: flex; 
+    justify-content: space-around;  
+}
+
+#menu>div>p{
+    padding: 0.5rem;
+}
+
+#windows{
+    background-color: white;
+    width: 3.5rem; 
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid rgba(163, 161, 161, 0.566); 
+}
+
+#windows>img{
+    height: 24px; 
+} 
+
+#icon {
+    display: flex;
+    align-items: center;
+}
+
+#icon>div>img {
+    height: 24px;
+    width: 24px;
+}
+
+#navigate { 
+    background-color: rgb(236, 227, 227); 
+    height: 3.5rem;
+}
+
+#navigate>div {
+    display: flex; 
+}
+
+#navigate>div>div {
+    display: flex;
+    border-right: 1px solid grey;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#navigate>div>div>div>img { 
+    height: 2rem;
+}
+
+#navigate>div>div>img {
+    height: 2rem;
+}
+
+#searchbar {
+    background-color: rgb(236, 227, 227);
+    height: 2rem;
+    border-top: 1px solid rgba(163, 161, 161, 0.566);
+    border-bottom: 1px solid rgba(163, 161, 161, 0.566);
+}
+
+#searchinput{
+    background-color: white;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border: 1px solid rgba(0, 51, 153, 1);
+    padding: 0.3%;
+    height: 16px;
+    align-self: center;
+}
+
+#searchinput>div {
+    display: flex;
+    align-items: center;
+}
+
+#searchinput>div>img {
+    height: 1rem; 
+}
+
+#searchbar>p {
+    display: flex; 
+    align-items: center; 
+    color: grey; 
+    margin: 0.5rem;
+}
+
+#searchinput>img {
+    height: 1.5rem;
+}
+
+#go {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+
+#go>img {
+    height: 2rem; 
+}
+
+#links {
+    color: grey;
+    border-left: 1px solid grey;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
