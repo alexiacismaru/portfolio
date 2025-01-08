@@ -53,14 +53,13 @@ main>div>div>button:last-child {
 
 .mocknav {
     display: flex;
-    justify-content: space-between;
-    margin-left: 1rem;
-    background-color: #e3dac9;
-    width: 100%;
-    margin: 0; 
+    justify-content: space-between; 
+    background-color: #e3dac9;  
     font-size: 12px; 
     border-bottom: 1px solid #beb7a9;
     border-top: 1px solid white;
+    align-items: center;
+    height: 2rem;
 }
 
 .mocknav>div {

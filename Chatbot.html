@@ -7,13 +7,14 @@
         <meta name="HandheldFriendly" content="true">  
         <link href="./css/WebPages.css" rel="stylesheet">
         <link href="./css/Global.css" rel="stylesheet">
+        <link href="./css/Chatbot.css" rel="stylesheet">
     </head>
     <body>
         <main> 
             <div id="top">
                 <div id='filepath'>
                     <img src="./resources/internet-explorer-file-removebg-preview.png" alt='internet explorer file icon'></img>
-                    <p>Main Page - Chatbot - Microsoft Internet Explorer</p>
+                    <p style="padding-left: 0.5rem;">Main Page - Chatbot - Microsoft Internet Explorer</p>
                 </div>
                 <div>
                     <button>_</button>
@@ -22,7 +23,7 @@
                 </div> 
             </div> 
 
-            <div id="menu">
+            <div id="menu" style="height: 2rem;">
                 <div>
                     <p>File</p>
                     <p>Edit</p>
@@ -31,7 +32,7 @@
                     <p>Tools</p> 
                     <p>Help</p>
                 </div>  
-                <div id="windows">
+                <div id="windows" style="height: 2rem;">
                     <img src="./resources/windows_logo-removebg-preview.png" alt="windows icon"></img>
                 </div> 
             </div>
@@ -90,17 +91,17 @@
                         </div>
                     </div> 
                 </div>
-            </div>  
-            
-            <div id="searchbar">
+            </div>   
+
+            <div id="searchbar" style="height: 2rem;">
                 <p>Address</p>
 
                 <div id="searchinput">
                     <div>
                         <img src="./resources/internet-explorer-file-removebg-preview.png"/>
-                        <p>https://chatbot.com/Main_Page</p>
+                        <a style="color: black; text-decoration: none;" href="https://github.com/alexiacismaru/analytic-chatbot" target=”_blank”>https://github.com/alexiacismaru/analytic-chatbot</a>
                     </div>
-                    <button id="dropdown">▼</button>
+                    <img src="./resources/dropdown-removebg-preview.png"/>
                 </div>
 
                 <div id="go">
@@ -113,7 +114,79 @@
                 </div>
             </div>
 
-            <h1>Chatbot</h1>
+            <section>
+                <header>
+                    <p>fan</p>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#technologies">Technologies</a></li> 
+                            <li><a href="./ResearchPaperChatbot.html">Research paper</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div id="home">
+                    <video width="70%" controls>
+                        <source src="./resources/chatbot/Pitch video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <a href="https://chatbot-fan.streamlit.app/" target=”_blank”>Get started</a>
+                </div>
+                <div id="about">
+                    <div>
+                        <div style="width: 50%;">
+                            <p>Chatbot is a conversational agent that interacts with users through text or voice. It is a software application that simulates human conversation, allowing users to interact with digital devices as if they were communicating with a real person.</p>
+                        </div>
+                        <div style="width: 30%;">
+                            <p>Chatbot is a conversational agent that interacts with users through text or voice. It is a software application that simulates human conversation, allowing users to interact with digital devices as if they were communicating with a real person.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="width: 20%;">
+                            <p>Chatbot is a conversational agent that interacts with users through text or voice. It is a software application that simulates human conversation, allowing users to interact with digital devices as if they were communicating with a real person.</p>
+                        </div>
+                        <div style="width: 60%;">
+                            <p>Chatbot is a conversational agent that interacts with users through text or voice. It is a software application that simulates human conversation, allowing users to interact with digital devices as if they were communicating with a real person.</p>
+                        </div>
+                    </div> 
+                </div>
+                <div id="technologies">
+                    <div>
+                        <p>Python</p>
+                        <p>GPT</p>
+                        <p>Streamlit</p>
+                        <p>DeepEval</p>
+                        <p>LangChain</p>
+                    </div>
+                    <div id="technologies-content">
+                        <div>
+                            <h3>Python</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus tellus sit amet ante aliquet, ut faucibus mi rutrum. Proin placerat tristique dui. Vivamus velit risus, tincidunt ac dictum sit amet, euismod nec lorem. Nullam et rhoncus dolor. Vestibulum vel lorem aliquam, fringilla sapien ut, hendrerit nisl.</p>
+                        </div>
+                        <div>
+                            <h3>GPT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus tellus sit amet ante aliquet, ut faucibus mi rutrum. Proin placerat tristique dui. Vivamus velit risus, tincidunt ac dictum sit amet, euismod nec lorem. Nullam et rhoncus dolor. Vestibulum vel lorem aliquam, fringilla sapien ut, hendrerit nisl.</p>
+                        </div>
+                        <div>
+                            <h3>Streamlit</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus tellus sit amet ante aliquet, ut faucibus mi rutrum. Proin placerat tristique dui. Vivamus velit risus, tincidunt ac dictum sit amet, euismod nec lorem. Nullam et rhoncus dolor. Vestibulum vel lorem aliquam, fringilla sapien ut, hendrerit nisl.</p>
+                        </div>
+                        <div>
+                            <h3>DeepEval</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus tellus sit amet ante aliquet, ut faucibus mi rutrum. Proin placerat tristique dui. Vivamus velit risus, tincidunt ac dictum sit amet, euismod nec lorem. Nullam et rhoncus dolor. Vestibulum vel lorem aliquam, fringilla sapien ut, hendrerit nisl.</p>
+                        </div>
+                        <div>
+                            <h3>LangChain</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus tellus sit amet ante aliquet, ut faucibus mi rutrum. Proin placerat tristique dui. Vivamus velit risus, tincidunt ac dictum sit amet, euismod nec lorem. Nullam et rhoncus dolor. Vestibulum vel lorem aliquam, fringilla sapien ut, hendrerit nisl.</p>
+                        </div>
+                    </div>
+                </div>   
+                <div id="footer">
+                    <p>This project was made in collaboration with Wobby and Karel de Grote college</p>
+                    <p>© 2024 Fan</p>
+                </div>
+            </section>
 
             <div style="display: flex; align-items: center; background-color: rgb(236, 227, 227); justify-content: space-between; height: 1.5rem;">
                 <img style="height: 16px;" src="./resources/internet-explorer-file-removebg-preview.png"/>

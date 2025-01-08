@@ -1,0 +1,121 @@
+section {
+    height: 71.5%; 
+    overflow: scroll; 
+    text-align: left;
+}
+
+section>header {
+    height: 3rem; 
+    justify-content: space-between; 
+    display: flex; 
+    align-items: center; 
+    padding-left: 1rem; 
+    margin-top: 1rem;
+} 
+
+section>header>p {
+    color: rgb(72, 72, 84);
+    font-size: 2rem;
+    border: 1px solid rgb(72, 72, 84);
+    padding: 0.5rem;
+    border-radius: 3px;
+    padding-right: 4rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+section>header>p:hover {
+    color: #7547FF;
+}
+
+section>header>nav>ul {
+    display: flex; 
+    list-style-type: none;  
+    border: 1px solid rgb(72, 72, 84);
+    padding: 0.5rem;
+    border-radius: 3px; 
+    height: 2rem;
+    align-items: center;
+    margin-right: 20px;
+}
+
+section>header>nav>ul>li {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+section>header>nav>ul>li:not(:first-child) { 
+    border-left: 1px solid rgb(209, 197, 197);
+    padding-left: 0.5rem;
+}
+
+section>header>nav>ul>li>a:hover {
+    color: #7547FF;
+}
+
+section>header>nav>ul>li>a {
+    text-decoration: none;  
+    color: black;
+}
+
+#home>video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 0.5rem;
+}
+
+#home>a {
+    background-color: #7547FF;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 7px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    text-decoration: none;
+    width: 5rem;
+}
+
+#home>a:hover {
+    background-color: white;
+    color: #7547FF;    
+    border: 1px solid #7547FF;
+} 
+
+#about>div {
+    display: flex; 
+}
+
+#about>div>div {
+    border: 1px solid rgb(209, 197, 197);
+    width: 20%;
+    padding: 1rem;
+    border-radius: 7px;
+    margin:0.5rem;
+}
+
+#technologies {
+    display: flex;
+    justify-content: space-between; 
+}
+
+#technologies-content>div {
+    border: 1px solid rgb(209, 197, 197);
+    width: 40%;
+    padding: 1rem;
+    border-radius: 7px;
+    margin:0.5rem;
+}
+
+#footer {
+    background-color: #7547FF;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}

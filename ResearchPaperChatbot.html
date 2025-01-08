@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">   
+        <link href="./css/MicrosoftWord.css" rel="stylesheet">
+        <link href="./css/Global.css" rel="stylesheet">
+    </head>
+    <body>
+        <main> 
+             <div id='top'>
+                <div id='about'>
+                    <img src="https://64.media.tumblr.com/482ba2e6e3136f986e765bb8dd8c5ffe/540d246794bf7091-d5/s540x810/6e1c994f78c1eb5006144767074ba2322b7fd318.png" alt='word icon'></img>
+                    <p>About - Microsoft Word</p>
+                </div>
+                <div>
+                    <button>_</button>
+                    <button>O</button>
+                    <button>X</button>
+                </div> 
+            </div>
+
+             <div class='mocknav'>
+                <div>
+                    <div class="rectangle">i</div>
+                    <p>File</p>
+                    <p>Edit</p>
+                    <p>View</p>
+                    <p>Insert</p>
+                    <p>Format</p>
+                    <p>Tools</p>
+                    <p>Table</p>
+                    <p>Help</p>
+                </div> 
+                <button>x</button> 
+            </div> 
+             <div> 
+                <div class='mocknav'>
+                    <div class="rectangle">i</div>
+                    <div>
+                        <img id='img' src="http://i.imgur.com/6RErgJC.png"/>
+                        <img id='img' src="./resources/sticker-png-windows-xp-folders-pack-256-folder-opened-256-icon-thumbnail-removebg-preview.png"/>
+                        <img id='img' src="./resources/floppy-disk-removebg-preview.png"/> 
+                        <img id='img' src="./resources/email-icon.drawio.png"/> 
+                    </div> 
+                    <div style="padding-left: 5px; border-left: 1px solid grey;">
+                        <img id='img' src="./resources/printer-removebg-preview.png"/>
+                        <img id='img' src="./resources/look-removebg-preview.png"/>
+                        <img id='img' src="./resources/check-removebg-preview.png"/>
+                    </div>
+                    <div style="padding-left: 5px; border-left: 1px solid grey;">
+                        <img id='img' src="./resources/scissors-removebg-preview.png"/>
+                        <img id='img' src="./resources/papers-removebg-preview.png"/>
+                        <img id='img' src="./resources/suitcase-removebg-preview.png"/>
+                    </div>
+                    <div style="padding-left: 5px; border-left: 1px solid grey;">
+                        <img id='img' src="./resources/earth-removebg-preview.png"/>
+                        <img id='img' src="./resources/calendar-removebg-preview.png"/> 
+                    </div>
+                    <div style="display: flex; justify-content: space-between; border-left: 1px solid grey; padding-left: 5px; align-items: center;">
+                        <div>
+                            <img id="img" style="height: 48px;" src="./resources/zoom.png"/>
+                            <img id="img" src="./resources/question-removebg-preview.png"/>    
+                        </div>
+                        <img id="img" style="margin-left: 2rem" src="./resources/arrows-removebg-preview.png"/>
+                    </div> 
+                </div>
+            </div> 
+            <div> 
+                <div class='mocknav'>
+                    <div class="rectangle">i</div>
+                    <div>
+                        <img id="img" style="height: 8rem;" src="./resources/font-removebg-preview.png"/> 
+                        <img id="img" style="height: 48px;" src="./resources/font-size-removebg-preview.png"/>
+                    </div> 
+                    <div>
+                        <p>B</p>    
+                        <p>I</p>
+                        <p>U</p>
+                    </div>
+                    <div>
+                        <img id='img' src="./resources/font-direction-left-removebg-preview.png"/>
+                        <img id='img' src="./resources/font-direction-center-removebg-preview.png"/>
+                    </div>
+                    <div>
+                        <img id='img' src="./resources/numbered-removebg-preview.png"/>
+                        <img id='img' src="./resources/square-removebg-preview.png"/>
+                        <img id='img' src="./resources/direction-left-removebg-preview.png"/>
+                        <img id='img' src="./resources/direction-right-removebg-preview.png"/>
+                    </div>
+
+                    <div>
+                        <img id='img' src="./resources/dash-square-removebg-preview.png"/>
+                    </div>
+                    <div class="arrows">
+                        <img id="img" src="./resources/arrows-removebg-preview.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <h1>Data Analyst Chatbot using GPT-4 and Streamlit</h1>
+                <img src="./resources/chatbot/chatbot-diagram.jpg"/>
+                <p>This article introduces the concept, potential applications, and the underlying technology of a conversational AI project. We created a chatbot that narrows the gap between people with no coding experience and everything Data Science offers. It can be used by anybody who wants to discover more about the contents of the datasets stored on the Wobby website by asking questions about them.</p>
+                <h2>Our goal</h2>
+                <p>Data is everywhere. IoT and data retention make huge amounts of data available to anyone. However, going through this gold mine of statistics can be tedious, time-consuming, and even intimidating for someone who has never done this before. Our mission is to make data processing straightforward. Our application will allow users, regardless of their skill level in data analytics, to extract insights and find hidden stories by “chatting” with the data. The application has to be simple, intuitive, and responsive. Additionally, we need to find a way to assess the answers given to LLM because there is no guarantee they are correct or accurate.</p>
+                <h2>Research questions</h2>
+                <p>Once we set our goals we started thinking about what we would need to build the application.</p>
+                <ul>
+                    <li>How to build a chatbot?</li>
+                    <li>How do LLMs work?</li>
+                    <li>How to Make the LLM behave like you want it to (prompt engineering)?</li>
+                    <li>How do you build a Streamlit app?</li>
+                    <li>How can I give access to allow LMs to access data in the first place?</li>
+                    <li>How to utilize LLMs to process data through natural language queries?</li>
+                    <li>How to test the accuracy of an LLM?</li>
+                </ul>
+                <h2>How do LLMs work, and how do we integrate them into a chatbot?</h2>
+                <h3>Conversational Analytics</h3>
+                <p>Conversational analytics represents using Natural Language Processing (NLP) to retrieve data from the conversation with the user and respond appropriately. You can analyze thousands of pieces of data and find useful insights present within the data.</p>
+                <h3>What is an LLM-based Chatbot?</h3>
+                <p>A chatbot represents a computer program designed to simulate conversation with human users, especially over the internet. Their knowledge is acquired using LLMs. A Large Language Model is an AI algorithm that uses deep learning techniques and massively large data sets to understand, summarise, generate, and predict new content.</p>
+                <h3>Why would someone build a chatbot?</h3>
+                <p>The best advantage of having a chatbot is the 24/7 availability. Because this is a virtual assistant and not a human, it doesn’t require sleep, food, or breaks, meaning it can be accessed at any time, anywhere, by multiple people. It can also deliver multilingual support. All the data from our datasets are in Dutch, but the chatbot can provide answers in any language.</p>
+                <p>Chatbots offer convenient self-service options. Someone who has never performed data analysis might find working with so many datasets that each has thousands of rows quite overwhelming. By using the chatbot they speed up this process by hours, if not even by days.</p>
+                <h2>How to build a chatbot?</h2>
+                <h3>Research</h3>
+                <p>Building a chatbot from scratch requires knowing and understanding various programming languages, software, and technologies. There are plenty of options for the foundation of the chatbot. Some popular programming languages for building chatbots are Python, Java, C++, and JavaScript. Using one of these languages, Natural Language Processing is used to make the chatbot understand and process natural language.</p>
+                <p>For the chatbot to provide meaningful answers it needs to be trained to learn from user interactions and improve its responses over time using machine learning algorithms.</p>
+                <p>To behave as you expect it to, you need to define its behavior through prompt engineering which is done by implementing system messages and making sure the messages stay in the chatbot’s history and do not get discarded if the conversation becomes too long as removing or losing them will result in an unpredictable outcome when addressing the chatbot.</p>
+                <h2>Technologies</h2>
+                <p>After thoroughly researching the available resources, we have landed on the following technologies for the chatbot: OpenAI GPT-3.5, Langchain, Streamlit, and DeepEval. Besides the obvious choice of GPT, it is mandatory to use additional libraries and software to achieve a fully functioning chatbot platform.</p>
+                <p>OpenAI API is an artificial intelligence model that provides developers with state-of-the-art language models. It is the reason why the chatbot can talk. Developers can input prompts, and the model will generate coherent and contextually relevant completions based on the input. The API analyses and understands text, generating human-like responses. The API is combined with custom functions to achieve custom features for the chatbot.</p>
+                <p>LangChain is an open-source framework that lets software developers combine large language models with other external components to develop LLM-powered applications. LangChain helps the chatbot process and access the pandas data frames using natural language queries.</p>
+                <p>Streamlit is an open-source framework usually used to build machine learning and data science web apps. It is a Python-based library specifically designed for machine learning engineers. The Streamlit website connects to the OpenAI API key and custom functions using the backend. Here, the user can insert their prompts and receive the answer from the assistant. Answers can vary from written responses to data frames to charts.</p>
+                <p>DeepEval is a framework that enables the developers to test different aspects of their application and their LLM to assess its performance and abilities using pre-trained in-built LLM for testing purposes.</p>
+                <h2>How can LLMs access data?</h2>
+                <p>Two of the problems that came to light very quickly were that LLMs were not able to access local files within the project, and datasets could not be passed to the LLM as a normal message as the token limit of the models available to us was too low (16,385 tokens for GPT-3.5 and 128,000 tokens for GPT-4).</p>
+                <p>So, we created custom functions the model can request to get the output, and using the “langchain_experimental” library by creating an “agent” that takes in a dataset and the query made by the user. This agent gets around the token limitation problem by running Python code based on the query and returning the output without reading the whole dataset.</p>
+                <h2>Hoe do we build our chatbot?</h2>
+                <p>When building our chatbot, the main focus was around tailoring it to be a helpful assistant for looking up data and processing it. We are using OpenAi’s model “3.5-turbo-0125” because it proved to be the most performant when it comes to following instructions and returning accurate results. Once we chose the model, we needed to perform prompt engineering by setting the system message and providing the model with its instructions and purpose.</p>
+                <pre>
+                    <code>
+                        self.messages = [
+                            {"role": "system",
+                            "content": """You are a helpful assistant who helps non-data people like 
+                            reporters find hidden stories in datasets. The users does not know how 
+                            to process and manipulate data so it is your job to so based on their 
+                            queries in natural language. You have datasets available that you can 
+                            access through the appropriate methods. When the user does not know what 
+                            he is looking for or asks for suggestions, look through the available 
+                            datasets and provide him with suggestions or topics. If the user knows 
+                            what he is looking for look up the specified topic. When you settle for 
+                            a dataset, ask the user if he would like to view the dataset before 
+                            starting to process it, if he asks questions about it or for you to 
+                            process it skip the display part. Do not display a dataset unless 
+                            explicitly asked to using show or display. Most of the datasets are 
+                            in Dutch so make sure to explain them in English and watch out for 
+                            translating errors. Datasets have IDs, the user should not see them 
+                            so refer to datasets by their names in the conversation. 
+                            When calling a function, make sure to provide all the needed arguments 
+                            and that you retain the output they return. Make sure to satisfy the 
+                            users requests and to help them to the best of your ability. 
+                            Be careful not to display data without the user asking for it."""}
+                        ]
+                    </code>
+                </pre>
+                <p>Now, the chatbot knows what it’s supposed to do but cannot achieve its goals because of limitations such as not accessing datasets. To fix these problems, we provided the model with the tools appropriate to achieve the desired functionalities. The tools come in the form of defined functions whose names and descriptions reflect what they are used for.</p>
+                <pre>
+                    <code>
+                        self.custom_functions = [
+                            {
+                                'name': 'get_all_datasets',
+                                'description': 'Get the id, name and description of all the available '
+                                            'local datasets. This can be used '
+                                            'when the user is vague or does not know what he is '
+                                            'looking for. Note that the names '
+                                            'and descriptions are in Dutch and have to be '
+                                            'translated to english when processing.'
+                            },
+                            {
+                                'name': 'search_for_dataset_by_topic',
+                                'description': 'When the user is looking for datasets about a '
+                                            'specified topic or is looking for '
+                                            'something specific, this method return datasets '
+                                            'that align what the user asks for. '
+                                            'Based on the users query, search through all '
+                                            'the datasets and fetch the ones that '
+                                            'best aligns with what the user wants. '
+                                            ' When fetching datasets you will receive the '
+                                            'dataset ids and description.',
+                                'parameters': {
+                                    'type': 'object',
+                                    'properties': {
+                                        'user_query': {
+                                            'type': 'string',
+                                            'description': 'The user query made that holds '
+                                                        'the topic or context he is looking for.'
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                'name': 'process_dataframe_with_natural_language',
+                                'description': 'When having selected a dataset, Process it with '
+                                            'natural language queries, you need to '
+                                            'pass the wanted datasets id and the query made '
+                                            'in natural language. Make sure you pass the dataset '
+                                            'id and query otherwise the function will not work.'
+                                            'Use this method when asked to do '
+                                            'somthing with a specific dataset.',
+                                'parameters': {
+                                    'type': 'object',
+                                    'properties': {
+                                        'dataframe_id': {
+                                            'type': 'string',
+                                            'description': 'The id of the dataset to be used to answer the query in natural language'
+                                        },
+                                        'query': {
+                                            'type': 'string',
+                                            'description': 'The natural language query or question '
+                                                        'asked about the datasets.'
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                'name': 'display_dataset',
+                                'description': 'Display a dataset when the users asks for it.',
+                                'parameters': {
+                                    'type': 'object',
+                                    'properties': {
+                                        'dataset_id': {
+                                            'type': 'string',
+                                            'description': 'The id of the dataset to be shown or '
+                                                        'displayed.'
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                'name': 'visualize_data_with_natural_language',
+                                'description': 'Visualize or plot data from datasets to help users '
+                                            'better see trends or other helpful '
+                                            'evolutions of data like the evolution of data '
+                                            'over time.',
+                                'parameters': {
+                                    'type': 'object',
+                                    'properties': {
+                                        'dataset_id': {
+                                            'type': 'string',
+                                            'description': 'The id of the dataset to be used.'
+                                        },
+                                        'user_query': {
+                                            'type': 'string',
+                                            'description': 'Description of the visualization '
+                                                        'the user would like to see in natural '
+                                                        'language.'
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    </code>
+                </pre>
+                <p>As you’ll notice, the functions have a description, and the parameters are defined and explained. This way, the model knows what function to call when necessary and how to call it by passing the correct parameters. These functions fill the gap between what the model can do and what extra features are wanted. When the chatbot can’t do a task on its own it will check the functions available and request the application/back-end to execute the corresponding function and provide the model with the output of that function. For example, when asked to look up data related to “unemployment” the model will make a function call using the function “search_for_dataset_by_topic” and pass the correct arguments. In this case, the argument “user_query” is needed which contains the wanted topic “unemployment”. Once the function is executed in the back end, the chatbot will receive datasets that align with “unemployment” and present them to the user as suggestions.</p>
+                <h2>What are our chatbot features?</h2>
+                <p>So, after all this research and coding, what is the final product? A virtual assistant that helps you navigate through all the data you have available. You can ask questions about general information, like “How many people have central heating in their homes?”, or find out statistics about data like “How did revenues evolve over five years?” along with visualizations that help you understand data easier.</p>
+                <p>We made the chatbot intuitive by explaining its purpose in the “About the chatbot” section and providing initial suggestions to start the conversation.</p>
+                <img src="./resources/chatbot/chatbot-screenshot-1.jpg"/>
+                <p>The chatbot is designed to determine the topic the user wants to talk about.</p>
+                <img src="./resources/chatbot/chatbot-screenshot-2.jpg"/>
+                <p>Once done, the chatbot will answer questions related to the selected data by using plain language, also known as natural language.</p>
+                <img src="./resources/chatbot/chatbot-screenshot-3.jpg"/>
+                <p>For more data-experienced people, users can inquire about the datasets themselves.</p>
+                <img src="./resources/chatbot/chatbot-screenshot-4.jpg"/>
+                <p>As you’ll notice, the data is in Dutch as the data providers we got our data from are Dutch municipalities. Our chatbot can translate and explain terms from other languages.</p>
+                <img src="./resources/chatbot/chatbot-screenshot-5.jpg"/>
+                <p>Additionally, the chatbot can visualize results in graphs to make it easier for users to understand them.</p>
+                <img src="./resources/chatbot/chatbot-screenshot-6.jpg"/>
+                <p>For user feedback, we made a form in the slider where feedback is submitted.</p>
+                <img src="./resources/chatbot/chatbot-screenshot-7.jpg"/>
+                <h2>How do we asses the accuracy of LLMs</h2>
+                <h3>DeepEval</h3>
+                <p>DeepEval is an open-source evaluation framework for LLMs. DeepEval makes it extremely easy to build and iterate on LLM.</p>
+                <p>In our project, we’ve leaned heavily on DeepEval. Our main focus has been accuracy tests, which are crucial for assessing how well our chatbot provides correct answers to real-world questions.</p>
+                <P>To conduct these tests, we started by coming up with various everyday questions that someone might ask. Then, we manually found the answers using Python, making sure we had the correct answers to compare with what our chatbot produced. This process was thorough and detailed, with all our code and calculations available in our project under ‘answerResearch.’</P>
+                <p>Each accuracy test followed clear instructions for our chatbot and a defined threshold for success. We also included the necessary elements to evaluate its performance accurately.</p>
+                <p>We didn’t stop there — we ran these tests multiple times, tweaking different settings like GPT versions and temperatures to find the best setup for our chatbot. This iterative approach helped us fine-tune its performance and get reliable results.</p>
+                <p>While some tests, like the direct question ones, didn’t quite align with how our chatbot works — as we prefer guiding users to relevant datasets first — others, like cohesion tests, showed our chatbot’s strength in providing clear and understandable responses, especially for users new to data and programming.</p>
+                <p>Another important aspect we tested was how well our chatbot could find and deliver the correct datasets based on user queries, crucial for ensuring users get the information they need quickly and accurately.</p>
+                <p>In wrapping up, our journey with DeepEval has given us valuable insights into our chatbot’s strengths and areas where we can improve. We strive to be sure that our chatbot continues to evolve, providing users with reliable and helpful assistance as they navigate the world of data.</p>
+                <h2>Sources</h2>
+                <ul>
+                    <li>An Introduction To Conversational Analytics, <a href="https://monkeylearn.com/blog/conversational-analytics/">https://monkeylearn.com/blog/conversational-analytics/</a>, MokeyLearn</li>
+                    <li>How is a Chatbot Based on an LLM, <a href="https://www.linkedin.com/pulse/how-chatbot-based-llm-mark-evans">https://www.linkedin.com/pulse/how-chatbot-based-llm-mark-evans</a>, LinkedIn, by Mark Evans, August 19, 2023</li>
+                    <li>What is a Chatbot, <a href="https://www.oracle.com/be/chatbots/what-is-a-chatbot/">https://www.oracle.com/be/chatbots/what-is-a-chatbot/</a>, Oracle</li>
+                    <li>Google Search</li>
+                    <li>large language models (LLMs), <a href="https://www.techtarget.com/whatis/definition/large-language-model-LLM">https://www.techtarget.com/whatis/definition/large-language-model-LLM</a>, by Sean Michael Kerner, TechTarget</li>
+                    <li>What technologies are required to build a simple chat bot from scratch without any third party software/service help (chatbots)? <a href="https://www.quora.com/What-technologies-are-required-to-build-a-simple-chat-bot-from-scratch-without-any-third-party-software-service-help-chatbots">https://www.quora.com/What-technologies-are-required-to-build-a-simple-chat-bot-from-scratch-without-any-third-party-software-service-help-chatbots</a>, Quora</li>
+                    <li>LangChain, <a href="https://www.techtarget.com/searchenterpriseai/definition/LangChain">https://www.techtarget.com/searchenterpriseai/definition/LangChain</a>, by Cameron Hashemi-Pour, TechTarget</li>
+                    <li>LangChain, <a href="https://en.wikipedia.org/wiki/LangChain">https://en.wikipedia.org/wiki/LangChain</a>, Wikipedia</li>
+                    <li>G-Eval | DeepEval — The Open-Source LLM Evaluation Framework, <a href="https://docs.confident-ai.com/docs/metrics-llm-evals">https://docs.confident-ai.com/docs/metrics-llm-evals</a>, March 19, 2024</li>
+                </ul>
+            </section>
+
+            <div> 
+                <div class='mocknav'>
+                    <div class="rectangle">i</div>
+                    <div>
+                        <p>Draw &#9662;</p>
+                        <img id="img" src="./resources/cursor-removebg-preview.png"/>
+                        <img id="img"src="./resources/reload-removebg-preview.png"/>
+                    </div> 
+                    <div>
+                        <p>AutoShapes &#9662;</p>
+                        <div class="shape"></div>
+                        <img id="img"src="./resources/arrow-removebg-preview.png"/>
+                        <div class="square"></div>
+                        <div class="circle"></div>
+                        <img id="img"src="./resources/text-removebg-preview.png"/>
+                        <img id="img"src="./resources/letters-removebg-preview.png"/>
+                        <img id="img"src="./resources/clown-removebg-preview.png"/>
+                    </div>
+                    <div>
+                        <img id="img"src="./resources/paint-bucket-removebg-preview.png"/>
+                        <img id="img"src="./resources/brush-removebg-preview.png"/>
+                        <img id="img"src="./resources/letter-removebg-preview.png"/>
+                    </div>
+                    <div class="arrows">
+                        <img id="img" src="./resources/arrows-removebg-preview.png"/>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #e3dac9;"> 
+                <div id='bottom'>
+                    <div style="width: 25rem;">
+                        <p>Page 1</p>
+                        <p>Sec 1</p>
+                        <p>1/1</p>
+                    </div> 
+                    <div style="width: 50%;">
+                        <p>At 1"</p>    
+                        <p>Ln 1</p>
+                        <p>Col 1</p>
+                    </div>
+                    <div style="color: grey; width: 15%;">
+                        <p>REC</p>
+                    </div>
+                    <div style="color: grey; width: 15%;">
+                        <p>TRK</p>
+                    </div> 
+                    <div style="color: grey; width: 15%;">
+                        <p>EXT</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
