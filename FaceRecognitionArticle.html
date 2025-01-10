@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">   
+        <link href="./css/MicrosoftWord.css" rel="stylesheet">
+        <link href="./css/Global.css" rel="stylesheet">
+    </head>
+    <body>
+        <main> 
+             <div id='top'>
+                <div id='about'>
+                    <img src="https://64.media.tumblr.com/482ba2e6e3136f986e765bb8dd8c5ffe/540d246794bf7091-d5/s540x810/6e1c994f78c1eb5006144767074ba2322b7fd318.png" alt='word icon'></img>
+                    <p>About - Microsoft Word</p>
+                </div>
+                <div>
+                    <button>_</button>
+                    <button>O</button>
+                    <button>X</button>
+                </div> 
+            </div>
+
+             <div class='mocknav'>
+                <div>
+                    <div class="rectangle">i</div>
+                    <p>File</p>
+                    <p>Edit</p>
+                    <p>View</p>
+                    <p>Insert</p>
+                    <p>Format</p>
+                    <p>Tools</p>
+                    <p>Table</p>
+                    <p>Help</p>
+                </div> 
+                <button>x</button> 
+            </div> 
+             <div> 
+                <div class='mocknav'>
+                    <div class="rectangle">i</div>
+                    <div>
+                        <img id='img' src="http://i.imgur.com/6RErgJC.png"/>
+                        <img id='img' src="./resources/sticker-png-windows-xp-folders-pack-256-folder-opened-256-icon-thumbnail-removebg-preview.png"/>
+                        <img id='img' src="./resources/floppy-disk-removebg-preview.png"/> 
+                        <img id='img' src="./resources/email-icon.drawio.png"/> 
+                    </div> 
+                    <div style="padding-left: 5px; border-left: 1px solid grey;">
+                        <img id='img' src="./resources/printer-removebg-preview.png"/>
+                        <img id='img' src="./resources/look-removebg-preview.png"/>
+                        <img id='img' src="./resources/check-removebg-preview.png"/>
+                    </div>
+                    <div style="padding-left: 5px; border-left: 1px solid grey;">
+                        <img id='img' src="./resources/scissors-removebg-preview.png"/>
+                        <img id='img' src="./resources/papers-removebg-preview.png"/>
+                        <img id='img' src="./resources/suitcase-removebg-preview.png"/>
+                    </div>
+                    <div style="padding-left: 5px; border-left: 1px solid grey;">
+                        <img id='img' src="./resources/earth-removebg-preview.png"/>
+                        <img id='img' src="./resources/calendar-removebg-preview.png"/> 
+                    </div>
+                    <div style="display: flex; justify-content: space-between; border-left: 1px solid grey; padding-left: 5px; align-items: center;">
+                        <div>
+                            <img id="img" style="height: 48px;" src="./resources/zoom.png"/>
+                            <img id="img" src="./resources/question-removebg-preview.png"/>    
+                        </div>
+                        <img id="img" style="margin-left: 2rem" src="./resources/arrows-removebg-preview.png"/>
+                    </div> 
+                </div>
+            </div> 
+            <div> 
+                <div class='mocknav'>
+                    <div class="rectangle">i</div>
+                    <div>
+                        <img id="img" style="height: 8rem;" src="./resources/font-removebg-preview.png"/> 
+                        <img id="img" style="height: 48px;" src="./resources/font-size-removebg-preview.png"/>
+                    </div> 
+                    <div>
+                        <p>B</p>    
+                        <p>I</p>
+                        <p>U</p>
+                    </div>
+                    <div>
+                        <img id='img' src="./resources/font-direction-left-removebg-preview.png"/>
+                        <img id='img' src="./resources/font-direction-center-removebg-preview.png"/>
+                    </div>
+                    <div>
+                        <img id='img' src="./resources/numbered-removebg-preview.png"/>
+                        <img id='img' src="./resources/square-removebg-preview.png"/>
+                        <img id='img' src="./resources/direction-left-removebg-preview.png"/>
+                        <img id='img' src="./resources/direction-right-removebg-preview.png"/>
+                    </div>
+
+                    <div>
+                        <img id='img' src="./resources/dash-square-removebg-preview.png"/>
+                    </div>
+                    <div class="arrows">
+                        <img id="img" src="./resources/arrows-removebg-preview.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <section> 
+                <h1>How to use VGG16 for face and gender recognition</h1>
+                <img src="./resources/facerecognition/screenshot1.jpg"/>
+                <p>How to build a face and gender recognition Python project using deep learning and VGG16.</p>
+                <h2>What is deep learning?</h2>
+                <p>Deep learning is a subcategory of machine learning, a neural network with three or more layers. These neural networks try to simulate the behavior of the human brain by learning from large amounts of data. While a neural network with a single layer can still make approximate predictions, additional hidden layers can help to optimize and refine for accuracy.</p>
+                <p>Deep learning improves automation by performing tasks without human intervention. Deep learning can be found in digital assistants, voice-enabled TV remotes, credit card fraud detection, and self-driving cars.</p>
+                <h2>Building the Python project</h2>
+                <p>Download the VGG16 Face Dataset and the Haar Cascade XML file used for face detection which will be used for the preprocessing in the face recognition task.</p>
+                <pre>
+                    <code>
+                        faceCascade = cv2.CascadeClassifier(os.path.join(base_path, "haarcascade_frontal_face_default.xml")) 
+                        # haar cascade detects faces in images
+
+                        vgg_face_dataset_url = "http://www.robots.ox.ac.uk/~vgg/data/vgg_face/vgg_face_dataset.tar.gz"
+
+                        with request.urlopen(vgg_face_dataset_url) as r, open(os.path.join(base_path, "vgg_face_dataset.tar.gz"),
+                         'wb') as f:
+                        f.write(r.read())
+
+                        # extract VGG dataset
+                        with tarfile.open(os.path.join(base_path, "vgg_face_dataset.tar.gz")) as f:
+                        f.extractall(os.path.join(base_path))
+
+                        # download Haar Cascade for face detection
+                        trained_haarcascade_url = "https://raw.githubusercontent.com/opencv/opencv/
+                        master/data/haarcascades/haarcascade_frontalface_default.xml"
+                        with request.urlopen(trained_haarcascade_url) as r, open(os.path.join(base_path, 
+                        "haarcascade_frontalface_default.xml"), 'wb') as f:
+                            f.write(r.read())
+                    </code>
+                </pre>
+                <p>Selectively load and process a specific number of images for a set of predefined subjects from the VGG Face Dataset.</p>
+                <pre>
+                    <code>
+                        # populate the list with the files of the celebrities that will be used for face recognition
+                        all_subjects = [subject for subject in sorted(os.listdir(os.path.join(base_path, 
+                        "vgg_face_dataset", "files"))) if subject.startswith("Jesse_Eisenberg") 
+                        or subject.startswith("Sarah_Hyland") or subject.startswith("Michael_Cera") 
+                        or subject.startswith("Mila_Kunis") and subject.endswith(".txt")]
+
+                        # define number of subjects and how many pictures to extract
+                        nb_subjects = 4
+                        nb_images_per_subject = 40
+                    </code>
+                </pre>
+                <p>Iterate through each subject’s file by opening a text file associated with the subject and reading the contents. Each line in these files contains a URL to an image. For each URL (which points to an image), the code tries to load the image using <i>urllib</i> and convert it into a NumPy array.</p>
+                <pre>
+                    <code>
+                        images = []
+
+                        for subject in all_subjects[:nb_subjects]:
+                        with open(os.path.join(base_path, "vgg_face_dataset", "files", subject), 'r') as f:
+                            lines = f.readlines()
+
+                        images_ = []
+                        for line in lines:
+                            url = line[line.find("http://"): line.find(".jpg") + 4]
+
+                            try:
+                            res = request.urlopen(url)
+                            img = np.asarray(bytearray(res.read()), dtype="uint8")
+                            # convert the image data into a format suitable for OpenCV
+                            # images are colored 
+                            img = cv2.imdecode(img, cv2.IMREAD_COLOR)
+                            h, w = img.shape[:2]
+                            images_.append(img)
+                            cv2_imshow(cv2.resize(img, (w // 5, h // 5)))
+
+                            except:
+                            pass
+
+                            # check if the required number of images has been reached
+                            if len(images_) == nb_images_per_subject:
+                            # add the list of images to the main images list and move to the next subject
+                            images.append(images_)
+                            break
+                    </code>
+                </pre>
+                <h3>Face detection set up</h3>
+                <ol>
+                    <li>Locate one or more faces in the image and put it in a box.</li>
+                    <li>Make sure the face is consistent with the database, such as geometry and photometrics.</li>
+                    <li>Extract features from the face that can be used for the recognition task.</li>
+                    <li>Match the face to one or more known faces in a prepared database.</li>
+                </ol>
+                <img style="height: 10rem;" src="./resources/facerecognition/screenshot2.jpg"/>
+                <pre>
+                    <code>
+                        # create arrays for all 4 celebrities
+                        jesse_images = []
+                        michael_images = []
+                        mila_images = []
+                        sarah_images = []
+
+                        faceCascade = cv2.CascadeClassifier(os.path.join(base_path, "haarcascade_frontalface_default.xml"))
+
+                        # iterate over the subjects
+                        for subject, images_ in zip(all_subjects, images):
+
+                        # create a grayscale copy to simplify the image and reduce computation
+                        for img in images_:
+                            img_ = img.copy()
+                            img_gray = cv2.cvtColor(img_, cv2.COLOR_BGR2GRAY)
+                            faces = faceCascade.detectMultiScale(
+                                img_gray,
+                                scaleFactor=1.2,
+                                minNeighbors=5,
+                                minSize=(30, 30),
+                                flags=cv2.CASCADE_SCALE_IMAGE
+                            )
+                            print("Found {} face(s)!".format(len(faces)))
+
+                            for (x, y, w, h) in faces:
+                                cv2.rectangle(img_, (x, y), (x+w, y+h), (0, 255, 0), 10)
+
+                            h, w = img_.shape[:2]
+                            resized_img = cv2.resize(img_, (224, 224))
+                            cv2_imshow(resized_img)
+
+                            if "Jesse_Eisenberg" in subject:
+                                jesse_images.append(resized_img)
+                            elif "Michael_Cera" in subject:
+                                michael_images.append(resized_img)
+                            elif "Mila_Kunis" in subject:
+                                mila_images.append(resized_img)
+                            elif "Sarah_Hyland" in subject:
+                                sarah_images.append(resized_img)
+                    </code>
+                </pre>
+                <p>The <i>detectMultiScale</i> method recognizes faces in the image. It then returns the coordinates of rectangles where it believes faces are located. For each face, a rectangle is drawn around it in the image, indicating the face’s location. Each image is resized to 224x224 pixels.</p>
+                <p>Split the dataset into a training and validation set:</p>
+                <p>The <b>training set</b> is used to train the machine learning model. It’s used to learn the patterns, features, and relationships within the data. The model adjusts its parameters to minimize errors in predictions or classifications made on the training data.</p>
+                <p>The <b>validation set</b> evaluates the model’s performance on a new set of data. This helps in checking how well the model generalizes to unseen data. The validation set should be an independent set that is not used during the training of the model(s). Mixing/using information from the validation set during training can lead to skewed results.</p>
+                <pre>
+                    <code>
+                        # create directories for saving faces
+                        for person in ['train/male', 'train/female', 'valid/male', 'valid/female']:
+                        os.makedirs(os.path.join(base_path, "faces", person), exist_ok=True)
+                        # 'exist_ok=True' parameter allows the function to run without error 
+                        even if some directories already exist
+
+                        def split_images(images, train_size):
+                            training_images = images[:train_size]
+                            validation_images = images[train_size:train_size + 10]
+                            return training_images, validation_images
+
+                        michael_training, michael_testing = split_images(michael_images, 20)
+                        mila_training, mila_testing = split_images(mila_images, 20)
+
+                        jesse_testing = jesse_images[:10]
+                        sarah_testing = sarah_images[:10]
+
+                        # Save the pictures to an individual filename
+                        def save_faces(images, directory, firstname, lastname):
+                            for i, img in enumerate(images):
+                                filename = os.path.join(base_path, "faces", directory, f"{firstname}_{lastname}_{i}.jpg")
+                                cv2.imwrite(filename, img)
+
+                        # Save the split images
+                        save_faces(michael_training, 'train/male', 'Michael', 'Cera')
+                        save_faces(michael_testing, 'valid/male', 'Michael', 'Cera')
+                        save_faces(mila_training, 'train/female', 'Mila', 'Kunis')
+                        save_faces(mila_testing, 'valid/female', 'Mila', 'Kunis')
+
+                        # Since Jesse and Sarah are only for testing, save them directly to the test directory
+                        save_faces(jesse_testing, 'valid/male', 'Jesse', 'Eisenberg')
+                        save_faces(sarah_testing, 'valid/female', 'Sarah', 'Hyland')
+                    </code>
+                </pre>
+                <h3>Data Augmentation</h3>
+                <p>The accuracy of deep learning models depends on the quality, quantity, and contextual meaning of training data. This is one of the most common challenges in building deep learning models and it can be costly and time-consuming. Companies use data augmentation to reduce dependency on training examples to build high-precision models quickly.</p>
+                <p>Data augmentation means artificially increasing the amount of data by generating new data points from existing data. This includes adding minor alterations to data or using machine learning models to generate new data points in the latent space of original data to amplify the dataset.</p>
+                <p><b>Synthetics</b> represent artificially generated data without using real-world images and it’s produced by Generative Adversarial Networks.</p>
+                <p><b>Augmented</b> derives from original images with some sort of minor geometric transformations (such as flipping, translation, rotation, or the addition of noise) to increase the diversity of the training set.</p>
+                <pre>
+                    <code>
+                        pipeline_male = Augmentor.Pipeline(source_directory='/content/sample_data/
+                        deep_learning_assignment/faces/train/male', 
+                        output_directory='/content/sample_data/deep_learning_assignment/faces/
+                        train_augmented/male')
+                        pipeline_male.flip_left_right(probability=0.7)
+                        pipeline_male.rotate(probability=0.7, max_left_rotation=10, max_right_rotation=10)
+                        pipeline_male.greyscale(probability=0.1)
+                        pipeline_male.sample(50)
+
+                        pipeline_female = Augmentor.Pipeline(source_directory='/content/
+                        sample_data/deep_learning_assignment/faces/train/female', 
+                        output_directory='/content/sample_data/deep_learning_assignment/faces/
+                        train_augmented/female')
+                        pipeline_female.flip_left_right(probability=0.7)
+                        pipeline_female.rotate(probability=0.7, max_left_rotation=10, max_right_rotation=10)
+                        pipeline_female.greyscale(probability=0.1)
+                        pipeline_female.sample(50)
+                    </code>
+                </pre>
+                <p>Data augmentation improves the performance of ML models through more diverse datasets and reduces operation costs related to data collection:</p>
+                <ul>
+                    <li><b>Flip Left-Right:</b> Images are randomly flipped horizontally with a probability of 0.7. This simulates the variation due to different orientations of subjects in images.</li>
+                    <li><b>Rotation:</b> The images are rotated slightly (up to 10 degrees in both directions) with a probability of 0.7. This adds variability to the dataset by simulating different head poses.</li>
+                    <li><b>Greyscale Conversion:</b> With a probability of 0.1, the images are converted to greyscale. This ensures the model can process and learn from images irrespective of their color information.</li>
+                    <li><b>Sampling:</b> The sample(50) method generates 50 augmented images from the original set. This expands the dataset, providing more data for the model to learn from.</li>
+                </ul>
+                <h3>Implementing the VGG16 Model</h3>
+                <p>VGG16 is a convolutional neural network widely used for image recognition. It is considered to be one of the best computer vision model architectures. It consists of 16 layers of artificial neurons that process the image incrementally to improve accuracy. In VGG16, “VGG” refers to the <i>Visual Geometry Group of the University of Oxford</i>, while “16” refers to the network’s 16 <i>weighted layers</i>.</p>
+                <p>VGG16 is used for image recognition and classification of new images. The pre-trained version of the VGG16 network is trained on over one million images from the ImageNet visual database. VGG16 can be applied to determine whether an image contains certain items, animals, plants, and more.</p>
+                <h3>VGG16 Architecture</h3>
+                <img style="height: 10rem;" src="./resources/facerecognition/screenshot3.jpg"/>
+                <p>There are 13 convolutional layers, five Max Pooling layers, and three Dense layers. This results in 21 layers with 16 weights, meaning it has 16 learnable parameter layers. VGG16 takes input tensor size as 224x244. The model focuses on having convolution layers of a 3x3 filter with stride 1. It always uses the same padding with a maxpool layer of 2x2 filter of stride 2.</p>
+                <p>Conv-1 Layer has 64 filters, Conv-2 has 128 filters, Conv-3 has 256 filters, Conv 4 and Conv 5 have 512 filters, and three fully connected layers where the first two have 4096 channels each, the third performs 1000-way ILSVRC classification and contains 1000 channels (one for each class). The final layer is the soft-max layer.</p>
+                <p>Start preparing the base model.</p>
+                <pre>
+                    <code>
+                        base_model = VGG16(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+
+                        # Set the layers of the base model to be non-trainable
+                        for layer in base_model.layers:
+                            layer.trainable = False
+                    </code>
+                </pre>
+                <p>To make sure that the model will classify the images correctly, we need to extend the model with additional layers.</p>
+                <pre>
+                    <code>
+                        x = base_model.output
+                        x = GlobalAveragePooling2D()(x)
+
+                        # dense layers
+                        x = Dense(1024, activation='relu')(x)
+                        x = Dense(512, activation='relu')(x)
+                        x = Dense(256, activation='relu')(x)
+                        # add a logistic layer for binary classification
+                        x = Dense(1, activation='sigmoid')(x)
+
+                        model = Model(inputs=base_model.input, outputs=x)
+                    </code>
+                </pre>
+                <p>The <i>Global Average Pooling 2D layer</i> condenses the feature maps obtained from VGG16 into a single 1D vector per map. It simplifies the output and reduces the total number of parameters, aiding in the prevention of overfitting.</p>
+                <p>The <i>Dense layers</i> are a sequence of fully connected (Dense) layers that are added. Each layer contains a specified number of units (1024, 512, and 256), chosen based on common practices and experimentation. These layers further process the features extracted by VGG16.</p>
+                <p>The final Dense layer (the <i>Output layer</i>) uses sigmoid activation suitable for binary classification (our two classes being ‘female’ and ‘male’).</p>
+                <h3>Adam Optimization</h3>
+                <p>The Adam Optimization algorithm is an extension of the stochastic gradient descent procedure to update network weights iterative based on training data. The method is efficient when working with large problems involving a lot of data or parameters. It requires less memory and is efficient.</p>
+                <p>This algorithm combines two gradient descent methodologies: momentum and Root Mean Square Propagation (RMSP).</p>
+                <p><b>Momentum</b> is an algorithm used to help accelerate the gradient descent algorithm using the <i>exponentially weighted average</i> of the gradients.</p>
+                <img style="height: 10rem;" src="./resources/facerecognition/screenshot4.jpg"/>
+                <p><b>Root mean square prop</b> is an adaptive learning algorithm that tries to improve the AdaGrad by taking the “exponential moving average”.</p>
+                <img style="height: 10rem;" src="./resources/facerecognition/screenshot5.jpg"/>
+                <p><i>Since mt and vt have both initialized as 0 (based on the above methods), it is observed that they gain a tendency to be ‘biased towards 0’ as both β1 & β2 ≈ 1. This Optimizer fixes this problem by computing ‘bias-corrected’ mt and vt. This is also done to control the weights while reaching the global minimum to prevent high oscillations when near it. The formulas used are:</i></p>
+                <img  style="height: 4rem;" src="./resources/facerecognition/screenshot6.jpg"/>
+                <p><i>Intuitively, we are adapting to the gradient descent after every iteration so that it remains controlled and unbiased throughout the process, hence the name Adam.</i></p>
+                <p><i>Now, instead of our normal weight parameters mt and vt, we take the bias-corrected weight parameters (m_hat)t and (v_hat)t. Putting them into our general equation, we get:</i></p>
+                <p>Source: Geeksforgeeks, <a href="https://www.geeksforgeeks.org/adam-optimizer/">https://www.geeksforgeeks.org/adam-optimizer/</a></p>
+                <pre>
+                    <code>
+                        model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+                        model.summary()
+                    </code>
+                </pre>
+                <p>Set up image data preprocessing, augmentation, and model training in a deep learning context.</p>
+                <pre>
+                    <code>
+                        train_datagen = ImageDataGenerator()
+
+                        training_set = train_datagen.flow_from_directory(
+                            '/content/sample_data/deep_learning_assignment/faces/train_augmented',
+                            batch_size=30,
+                            class_mode='binary'
+                        )
+
+                        validation_datagen = ImageDataGenerator() # used for real-time data augmentation and preprocessing
+                        # generates batches of tensor image data with real-time data augmentation 
+
+                        validation_set = validation_datagen.flow_from_directory(
+                            '/content/sample_data/deep_learning_assignment/faces/valid',
+                            batch_size=30,
+                            class_mode='binary'
+                        )
+
+                        model.fit(training_set, epochs=10, validation_data=validation_set)
+                    </code>
+                </pre>
+                <ul>
+                    <li><b>epochs:</b> the number of epochs specifies how much the entire training dataset will be passed forward and backward through the neural network. The model will go through the training data 10 times. An epoch is one complete presentation of the data set to be learned to a learning machine.</li>
+                    <li><b>batch_size:</b> this parameter defines the number of samples that are propagated through the network at one time. Here, we are using a batch size of 30, meaning the model will take 30 images at a time, process them, update the weights, and then proceed to the next batch of 30 images.</li>
+                </ul>
+                <p>The model’s performance is evaluated by making predictions on the validation set. This gives an idea of how well the model performs unseen data. A threshold is applied to these predictions to classify each image into one of two classes (“male” or “female”).</p>
+                <pre>
+                    <code>
+                        # Evaluate the model on the validation set
+                        validation_loss, validation_accuracy = model.evaluate(validation_set)
+
+                        print(f"Validation Accuracy: {validation_accuracy * 100:.2f}%")
+                        print(f"Validation Loss: {validation_loss}")
+
+                        # Make predictions on the validation set
+                        validation_predictions = model.predict(validation_set)
+
+                        # Apply threshold to determine class
+                        threshold = 0.5
+                        predicted_classes = (validation_predictions > threshold).astype(int)
+
+                        # Display the predicted classes along with image names
+                        for i in range(len(validation_set.filenames)):
+                            filename = validation_set.filenames[i]
+                            prediction = predicted_classes[i][0]  # Binary predictions, extract single value
+
+                            class_name = 'male' if prediction == 0 else 'female'
+                            print(f"Image: {filename}, Predicted Class: {class_name}\n")
+                    </code>
+                </pre>
+                <p>Create a confusion matrix to visualize the accuracy.</p>
+                <pre>
+                    <code>
+                        actual_labels = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                         1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                        predictions =   [1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 
+                        1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1]
+
+                        cm = confusion_matrix(actual_labels, predictions)
+
+                        sns.heatmap(cm, annot=True, fmt='d')
+                        plt.ylabel('Actual')
+                        plt.xlabel('Predicted')
+                        plt.show()
+                    </code>
+                </pre>
+                <p>For binary classification, the Receiver Operating Characteristic (ROC) curve and Area Under Curve (AUC) are useful tools for understanding the trade-offs between the true positive rate and the false positive rate.</p>
+                <pre>
+                    <code>
+                        fpr, tpr, thresholds = roc_curve(actual_labels, predictions)
+                        roc_auc = auc(fpr, tpr)
+
+                        plt.figure()
+                        plt.plot(fpr, tpr, color='darkorange', lw=2, label='ROC curve (area = %0.2f)' % roc_auc)
+                        plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
+                        plt.xlabel('False Positive Rate')
+                        plt.ylabel('True Positive Rate')
+                        plt.title('Receiver Operating Characteristic')
+                        plt.legend(loc="lower right")
+                        plt.show()
+                    </code>
+                </pre>
+                <p>In conclusion, by using deep learning and image processing algorithms you can build a Python project that recognizes human faces and can categorize them as either male or female.</p>
+            </section>
+
+            <div> 
+                <div class='mocknav'>
+                    <div class="rectangle">i</div>
+                    <div>
+                        <p>Draw &#9662;</p>
+                        <img id="img" src="./resources/cursor-removebg-preview.png"/>
+                        <img id="img"src="./resources/reload-removebg-preview.png"/>
+                    </div> 
+                    <div>
+                        <p>AutoShapes &#9662;</p>
+                        <div class="shape"></div>
+                        <img id="img"src="./resources/arrow-removebg-preview.png"/>
+                        <div class="square"></div>
+                        <div class="circle"></div>
+                        <img id="img"src="./resources/text-removebg-preview.png"/>
+                        <img id="img"src="./resources/letters-removebg-preview.png"/>
+                        <img id="img"src="./resources/clown-removebg-preview.png"/>
+                    </div>
+                    <div>
+                        <img id="img"src="./resources/paint-bucket-removebg-preview.png"/>
+                        <img id="img"src="./resources/brush-removebg-preview.png"/>
+                        <img id="img"src="./resources/letter-removebg-preview.png"/>
+                    </div>
+                    <div class="arrows">
+                        <img id="img" src="./resources/arrows-removebg-preview.png"/>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #e3dac9;"> 
+                <div id='bottom'>
+                    <div style="width: 25rem;">
+                        <p>Page 1</p>
+                        <p>Sec 1</p>
+                        <p>1/1</p>
+                    </div> 
+                    <div style="width: 50%;">
+                        <p>At 1"</p>    
+                        <p>Ln 1</p>
+                        <p>Col 1</p>
+                    </div>
+                    <div style="color: grey; width: 15%;">
+                        <p>REC</p>
+                    </div>
+                    <div style="color: grey; width: 15%;">
+                        <p>TRK</p>
+                    </div> 
+                    <div style="color: grey; width: 15%;">
+                        <p>EXT</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">   
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">   
+        <link href="./css/MicrosoftWord.css" rel="stylesheet">
+        <link href="./css/Global.css" rel="stylesheet">
+    </head>
+    <body>
+        <main> 
+             <div id='top'>
+                <div id='about'>
+                    <img src="https://64.media.tumblr.com/482ba2e6e3136f986e765bb8dd8c5ffe/540d246794bf7091-d5/s540x810/6e1c994f78c1eb5006144767074ba2322b7fd318.png" alt='word icon'></img>
+                    <p>About - Microsoft Word</p>
+                </div>
+                <div>
+                    <button>_</button>
+                    <button>O</button>
+                    <button>X</button>
+                </div> 
+            </div>
+
+             <div class='mocknav'>
+                <div>
+                    <div class="rectangle">i</div>
+                    <p>File</p>
+                    <p>Edit</p>
+                    <p>View</p>
+                    <p>Insert</p>
+                    <p>Format</p>
+                    <p>Tools</p>
+                    <p>Table</p>
+                    <p>Help</p>
+                </div> 
+                <button>x</button> 
+            </div> 
+             <div> 
+                <div class='mocknav'>
+                    <div class="rectangle">i</div>
+                    <div>
+                        <img id='img' src="http://i.imgur.com/6RErgJC.png"/>
+                        <img id='img' src="./resources/sticker-png-windows-xp-folders-pack-256-folder-opened-256-icon-thumbnail-removebg-preview.png"/>
+                        <img id='img' src="./resources/floppy-disk-removebg-preview.png"/> 
+                        <img id='img' src="./resources/email-icon.drawio.png"/> 
+                    </div> 
+                    <div style="padding-left: 5px; border-left: 1px solid grey;">
+                        <img id='img' src="./resources/printer-removebg-preview.png"/>
+                        <img id='img' src="./resources/look-removebg-preview.png"/>
+                        <img id='img' src="./resources/check-removebg-preview.png"/>
+                    </div>
+                    <div style="padding-left: 5px; border-left: 1px solid grey;">
+                        <img id='img' src="./resources/scissors-removebg-preview.png"/>
+                        <img id='img' src="./resources/papers-removebg-preview.png"/>
+                        <img id='img' src="./resources/suitcase-removebg-preview.png"/>
+                    </div>
+                    <div style="padding-left: 5px; border-left: 1px solid grey;">
+                        <img id='img' src="./resources/earth-removebg-preview.png"/>
+                        <img id='img' src="./resources/calendar-removebg-preview.png"/> 
+                    </div>
+                    <div style="display: flex; justify-content: space-between; border-left: 1px solid grey; padding-left: 5px; align-items: center;">
+                        <div>
+                            <img id="img" style="height: 48px;" src="./resources/zoom.png"/>
+                            <img id="img" src="./resources/question-removebg-preview.png"/>    
+                        </div>
+                        <img id="img" style="margin-left: 2rem" src="./resources/arrows-removebg-preview.png"/>
+                    </div> 
+                </div>
+            </div> 
+            <div> 
+                <div class='mocknav'>
+                    <div class="rectangle">i</div>
+                    <div>
+                        <img id="img" style="height: 8rem;" src="./resources/font-removebg-preview.png"/> 
+                        <img id="img" style="height: 48px;" src="./resources/font-size-removebg-preview.png"/>
+                    </div> 
+                    <div>
+                        <p>B</p>    
+                        <p>I</p>
+                        <p>U</p>
+                    </div>
+                    <div>
+                        <img id='img' src="./resources/font-direction-left-removebg-preview.png"/>
+                        <img id='img' src="./resources/font-direction-center-removebg-preview.png"/>
+                    </div>
+                    <div>
+                        <img id='img' src="./resources/numbered-removebg-preview.png"/>
+                        <img id='img' src="./resources/square-removebg-preview.png"/>
+                        <img id='img' src="./resources/direction-left-removebg-preview.png"/>
+                        <img id='img' src="./resources/direction-right-removebg-preview.png"/>
+                    </div>
+
+                    <div>
+                        <img id='img' src="./resources/dash-square-removebg-preview.png"/>
+                    </div>
+                    <div class="arrows">
+                        <img id="img" src="./resources/arrows-removebg-preview.png"/>
+                    </div>
+                </div>
+            </div>
+
+            <section> 
+                <h1>How to detect anomalies in your data using Isolation Forest Algorithm</h1>
+                <img src="./resources/detectanomalies/screenshot1.jpg"/>
+                <p>What is an Isolation Forest model and how to use it.</p>
+                <p>Anomaly detection is used to identify outliers in datasets, particularly in fraud detection, network security, or predictive maintenance.</p>
+                <p>Isolation Forest splits the data into tree-like structures and isolates values considered outliers. If a value is not an anomaly, the model keeps breaking it.</p>
+                <p>In this article, we’ll dive into implementing anomaly detection using the Isolation Forest model in Python.</p>
+                <h2>Isolation trees</h2>
+                <p>The idea of the Isolation Tree Model is that abnormal values are easier to separate from the rest of the sample. The IsolationForest isolates observations by selecting a random feature and then a random split value between the maximum and minimum values of the selected feature.</p>
+                <img src="./resources/detectanomalies/screenshot2.jpg"/>
+                <p>The Isolation Forest works by recursively partitioning the dataset. The <b>path length</b> h(x)h(x)h(x) represents the number of splits (or recursive partitions) required to isolate a data point xxx.</p>
+                <ul>
+                    <li>For a given point xxx, the algorithm isolates it by randomly selecting a feature and a split value. It continues partitioning the dataset until the point is completely isolated (i.e., placed into a single point leaf node)</li>
+                    <li>Anomalies are expected to be isolated earlier, resulting in a shorter path length compared to normal points.</li>
+                </ul>
+                <h3>Average Path Length</h3>
+                <p>The average path length c(n) for a data point in a dataset of size n is calculated as:</p>
+                <img style="height: 5rem;" src="./resources/detectanomalies/screenshot3.jpg"/>
+                <p>where H(n) is the harmonic number, which can be approximated as:</p>
+                <img style="height: 5rem;" src="./resources/detectanomalies/screenshot4.jpg"/>
+                <p>γ/gamma≈0.577215 is the Euler-Mascheroni constant.</p>
+                <p>The average path length c(n) approximates the expected path length for a normal data point. Anomalous points should have a path length significantly shorter than c(n).</p>
+                <h2>Anomaly detection</h2>
+                <p>Use the training set to build some iTrees. Pass each data point through all the iTrees → count the length of the path of each length tree → assign it an “anomaly score” → label the point as an anomaly if its score is greater than the threshold.</p>
+                <h3>Anomaly score</h3>
+                <p>The anomaly score is based on the observation that the structure of the iTrees is the equivalent of the Binary Search Trees.</p>
+                <p>This is the estimation of average h(x) for external node terminations:</p>
+                <img style="height: 5rem;" src="./resources/detectanomalies/screenshot5.jpg"/>
+                <p>where n is the test set size, and m is the sample set size. c(m) is the average h(x) given m.</p>
+                <h2>Implementing the Isolation Forest Model in Python</h2>
+                <p>Create a violin plot to estimate the threshold value:</p>
+                <pre>
+                    <code>
+                        from sklearn.ensemble import IsolationForest  
+                        import pandas as pd
+                        import numpy as np
+                        import seaborn as sns
+
+                        sns.violinplot(data=data, y='pollution')
+                    </code>
+                </pre>
+                <img src="./resources/detectanomalies/screenshot6.jpg"/>
+                <p>Initialize the model:</p>
+                <pre>
+                    <code>
+                        random_state = np.random.RandomState(42)
+                        clf = IsolationForest(n_estimators=100, max_samples='auto', contamination=0.2, random_state=random_state)
+                        clf.fit(data[['pollution']])
+                    </code>
+                </pre>
+                <ul>
+                    <li><b>n_estimators:</b> int, default=100</li>
+                </ul>
+                <p>The number of base estimators in the ensemble.</p>
+                <ul>
+                    <li><b>max_samples:</b> <i>“auto”, int or float, default=”auto”</i></li>
+                </ul>
+                <p>The number of samples to draw from X to train each base estimator. If int, then draw max_samples samples. If float, then draw max_samples * X.shape[0] samples. If “auto”, then max_samples=min(256, n_samples).</p>
+                <p>If max_samples is larger than the number of samples provided, all samples will be used for all trees (no sampling).</p>
+                <ul>
+                    <li><b>contamination:</b> <i>‘auto’ or float, default=’auto’</i></li>
+                </ul>
+                <p>The amount of contamination of the data set, i.e. the proportion of outliers in the data set. It is used when fitting to define the threshold on the scores of the samples. If ‘auto’, the threshold is determined as in the original paper. If float, the contamination should be in the range (0, 0.5].</p>
+                <ul>
+                <li><b>random_state:</b> <i>int, RandomState instance or None, default=None</i></li>
+                </ul>   
+                <p>Controls the pseudo-randomness of the selection of the feature and split values for each branching step and each tree in the forest.</p>
+                <p>Next, assign each value an anomaly score:</p>
+                <pre>
+                    <code>
+                        data['scores']=clf.decision_function(data[['pollution']])
+                        data['anomaly']=clf.predict(data[['pollution']])
+                        data[['pollution', 'scores', 'anomaly']]
+                    </code>
+                </pre>
+                <p>Last, evaluate the model and calculate the accuracy:</p>
+                <pre>
+                    <code>
+                        outliers_counter = len(data[data['pollution'] > 16])
+                        print(outliers_counter)
+
+                        print("Accuracy percentage:", 100*list(data['anomaly']).count(-1)/(outliers_counter))
+                    </code>
+                </pre>
+                <h2>Why the Isolation Forest Model?</h2>
+                <p>The Isolation Forest does not make any assumptions about the data’s distribution. This is important in anomaly detection since anomalies often do not follow the expected distribution.</p>
+                <p>Since anomalies are expected to be isolated earlier than normal data, the model naturally identifies them without needing complex calculations.</p>
+                <p>In conclusion, Isolation Forest is a good model to use for unsupervised anomaly detection, particularly in large datasets. By using scikit-learn, you can easily implement Isolation Forest in Python and customize it for your specific use case.</p>
+            </section>
+
+            <div> 
+                <div class='mocknav'>
+                    <div class="rectangle">i</div>
+                    <div>
+                        <p>Draw &#9662;</p>
+                        <img id="img" src="./resources/cursor-removebg-preview.png"/>
+                        <img id="img"src="./resources/reload-removebg-preview.png"/>
+                    </div> 
+                    <div>
+                        <p>AutoShapes &#9662;</p>
+                        <div class="shape"></div>
+                        <img id="img"src="./resources/arrow-removebg-preview.png"/>
+                        <div class="square"></div>
+                        <div class="circle"></div>
+                        <img id="img"src="./resources/text-removebg-preview.png"/>
+                        <img id="img"src="./resources/letters-removebg-preview.png"/>
+                        <img id="img"src="./resources/clown-removebg-preview.png"/>
+                    </div>
+                    <div>
+                        <img id="img"src="./resources/paint-bucket-removebg-preview.png"/>
+                        <img id="img"src="./resources/brush-removebg-preview.png"/>
+                        <img id="img"src="./resources/letter-removebg-preview.png"/>
+                    </div>
+                    <div class="arrows">
+                        <img id="img" src="./resources/arrows-removebg-preview.png"/>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color: #e3dac9;"> 
+                <div id='bottom'>
+                    <div style="width: 25rem;">
+                        <p>Page 1</p>
+                        <p>Sec 1</p>
+                        <p>1/1</p>
+                    </div> 
+                    <div style="width: 50%;">
+                        <p>At 1"</p>    
+                        <p>Ln 1</p>
+                        <p>Col 1</p>
+                    </div>
+                    <div style="color: grey; width: 15%;">
+                        <p>REC</p>
+                    </div>
+                    <div style="color: grey; width: 15%;">
+                        <p>TRK</p>
+                    </div> 
+                    <div style="color: grey; width: 15%;">
+                        <p>EXT</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

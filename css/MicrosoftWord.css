@@ -115,5 +115,8 @@ section>h3 {
 
 section>ul {
     padding-left: 5rem;
-}
+} 
 
+section>ol {
+    padding-left: 5rem;
+}

@@ -65,4 +65,60 @@ main>div>button>img{
 #icons>a>img {
     height: 24px;
     width: 24px;
+} 
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40rem;
+    width: 60.5rem;
+    background: #fff;
+    z-index: 1000; 
+}
+.popup iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1001;
+}
+
+.popup.active {
+    display: block;
+}
+
+#start {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 27rem;
+    width: 30rem;
+    background: #fff;
+    z-index: 1000;
+}
+
+#start iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#start.active {
+    display: block;
 }
