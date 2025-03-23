@@ -1,13 +1,13 @@
-@font-face {
+/* @font-face {
     font-family: tahoma;
     src: url(./resources/windows-xp-tahoma.ttf);
-}
+} */
 
 body {
     width: 100%;
     margin: 0 auto;
     text-align: center; 
-    font-family: tahoma;
+    font-family: Tahoma;
 }
 
 main {
@@ -19,22 +19,7 @@ main>div {
     display: flex;
     justify-content: space-between; 
     padding-right: 0.5rem;
-}
-
-main>div>div>button { 
-    background: linear-gradient(to bottom, #003c78, #007dc5);
-    border-radius: 7%;
-    border: 1px solid white;
-    color: white;
-    font-size: 12px; 
-    height: 24px;
-    width: 24px;
-}
-
-main>div>div>button:last-child {
-    background: rgb(255,51,80);
-    background: linear-gradient(307deg, rgba(255,51,80,1) 60%, rgba(255,255,255,1) 100%);
-}
+} 
 
 #filepath {
     display: flex;

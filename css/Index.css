@@ -1,18 +1,18 @@
-@font-face {
+/* @font-face {
     font-family: tahoma;
     src: url(./resources/windows-xp-tahoma.ttf);
-}
+} */
 
 body {
     width: 100%;
     margin: 0 auto;
     text-align: center; 
-    font-family: tahoma;
+    font-family: Tahoma;
 }
 
 footer { 
     width: 100%; 
-    height: 5vh;
+    height: 4vh;
     background: linear-gradient(to bottom, #003c78, #007dc5);
     display: flex;
     justify-content: space-between;
@@ -22,21 +22,21 @@ footer {
 
 #icons {
     background: linear-gradient(to bottom, #0293e7, #75b1ed);
-    width: 15%;
+    width: 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 5vh;
-    font-size: 14px;
+    height: 4vh;
+    font-size: 12px;
     padding-right: 5px;
-    border-left: 3px solid #003162;
+    border-left: 2px solid #003162;
 }
 
 main {
-    background-image: url('https://cdn.wallpaperhub.app/cloudcache/6/9/0/e/e/f/690eefe3ba1f553e0ea527f51ee407b604b681b4.jpg');
+    background-image: url('https://live.staticflickr.com/27/59290347_15553196fd.jpg');
     background-size: cover;
     font-size: 1rem;
-    height: 95vh;
+    height: 95.85vh;
 }
 
 main>div{
@@ -63,8 +63,8 @@ main>div>button>img{
 }
 
 #icons>a>img {
-    height: 24px;
-    width: 24px;
+    height: 20px;
+    width: 20px;
 } 
 
 .popup {
@@ -85,16 +85,15 @@ main>div>button>img{
 }
 .close-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #f44336;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
-    z-index: 1001;
+    top: 9px;
+    right: 10px; 
+    background: linear-gradient(307deg, rgba(255,51,80,1) 60%, rgba(255,255,255,1) 100%);
+    border-radius: 7%;
+    border: 1px solid white;
+    color: white;
+    font-size: 12px; 
+    height: 24px;
+    width: 24px;
 }
 
 .popup.active {
@@ -121,4 +120,11 @@ main>div>button>img{
 
 #start.active {
     display: block;
+}
+
+#green-start-button {
+    background: none; 
+    border: none; 
+    margin: 0; 
+    padding: 0;  
 }

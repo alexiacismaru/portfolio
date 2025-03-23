@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="true">  
         <title>Alexia Cismaru</title>
-        <link href="./css/Index.css" rel="stylesheet"> 
+        <link href="./css/Index.css" rel="stylesheet">  
         <script> 
             //Projects
             function openProjects() {
@@ -126,124 +126,142 @@
             <div style="bottom: 70%; right: 35%;"> 
                 <button onclick="openProjects()">
                     <img src="https://icons.iconarchive.com/icons/dtafalonso/modern-xp/512/ModernXP-16-Folder-Documents-icon.png"/>
-                    <p>Projects</p>
+                    <p style="margin: 0;">Projects</p>
                 </button> 
 
                 <div id="overlay" onclick="closeProjects()"></div>
                 <div class="popup" id="projects">
-                    <button class="close-btn" onclick="closeProjects()">Close</button>
-                    <iframe src="./Work.html" scrolling="no"></iframe>
+                    <button class="close-btn" onclick="closeProjects()">X</button>
+                    <iframe style="margin: 0;" src="./Work.html" scrolling="no"></iframe>
                 </div> 
             </div>
             <div style="bottom: 70%; right: 91%;"> 
                 <button onclick="openChatbot()">
                     <img src="./resources/download.png"/>
-                    <p>chatbot</p>
+                    <p style="margin: 0;">chatbot</p>
                 </button> 
 
                 <div id="overlay" onclick="closeChatbot()"></div>
-                <div class="popup" id="chatbot">
-                    <button class="close-btn" onclick="closeChatbot()">Close</button>
-                    <iframe src="./Chatbot.html" scrolling="no"></iframe>
+                <div class="popup" id="chatbot"> 
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 40px; background: linear-gradient(to bottom, #003c78, #007dc5);">_</button>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 70px; background: linear-gradient(to bottom, #003c78, #007dc5);">🗖</button> 
+                    <button class="close-btn" onclick="closeChatbot()">X</button>
+                    <iframe style="margin: 0;" src="./Chatbot.html" scrolling="no"></iframe>
                 </div> 
             </div>
             <div style="bottom: 58%; right: 90%;"> 
                 <button onclick="openMusicLibrary()">
                     <img src="./resources/png-clipart-windows-live-for-xp-music-folder-icon-thumbnail-removebg-preview.png"/>
-                    <p>music_library</p>
+                    <p style="margin: 0;">music_library</p>
                 </button> 
 
                 <div id="overlay" onclick="closeMusicLibrary()"></div>
                 <div class="popup" id="music_library">
-                    <button class="close-btn" onclick="closeMusicLibrary()">Close</button>
-                    <iframe src="./MusicLibrary.html" scrolling="no"></iframe>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 40px; background: linear-gradient(to bottom, #003c78, #007dc5);">_</button>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 70px; background: linear-gradient(to bottom, #003c78, #007dc5);">🗖</button> 
+                    <button class="close-btn" onclick="closeChatbot()">X</button>
+                    <iframe style="margin: 0;" src="./MusicLibrary.html" scrolling="no"></iframe>
                 </div>  
             </div>
             <div style="bottom: 70%; right: 28.5%;"> 
                 <button onclick="openBackgammon()">
                     <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png"/>
-                    <p>backgammon</p>
+                    <p style="margin: 0;">backgammon</p>
                 </button> 
 
                 <div id="overlay" onclick="closeBackgammon()"></div>
                 <div class="popup" id="backgammon">
-                    <button class="close-btn" onclick="closeBackgammon()">Close</button>
-                    <iframe src="./Backgammon.html" scrolling="no"></iframe>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 40px; background: linear-gradient(to bottom, #003c78, #007dc5);">_</button>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 70px; background: linear-gradient(to bottom, #003c78, #007dc5);">🗖</button> 
+                    <button class="close-btn" onclick="closeChatbot()">X</button>
+                    <iframe style="margin: 0;" src="./Backgammon.html" scrolling="no"></iframe>
                 </div>  
             </div>
             <div style="bottom: 30%; right: 68%"> 
                 <button onclick="openPredictPollution()">
                     <img src="./resources/download-removebg-preview.png"/>
-                    <p>predict_pollution</p>
+                    <p style="margin: 0;">predict_pollution</p>
                 </button>  
                 
                 <div id="overlay" onclick="closePredictPollution()"></div>
                 <div class="popup" id="predict_pollution">
-                    <button class="close-btn" onclick="closePredictPollution()">Close</button>
-                    <iframe src="./PredictPollution.html" scrolling="no"></iframe>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 40px; background: linear-gradient(to bottom, #003c78, #007dc5);">_</button>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 70px; background: linear-gradient(to bottom, #003c78, #007dc5);">🗖</button> 
+                    <button class="close-btn" onclick="closeChatbot()">X</button>
+                    <iframe style="margin: 0;" src="./PredictPollution.html" scrolling="no"></iframe>
                 </div>  
             </div>
             <div style="bottom: 30%; right: 61%"> 
                 <button onclick="openCostMonitoring()">
                     <img src="./resources/alert_icon.png"/>
-                    <p>cost_monitoring</p>
+                    <p style="margin: 0;">cost_monitoring</p>
                 </button>
                 
                 <div id="overlay" onclick="closeCostMonitoring()"></div>
                 <div class="popup" id="cost_monitoring">
-                    <button class="close-btn" onclick="closeCostMonitoring()">Close</button>
-                    <iframe src="./CostMonitoring.html" scrolling="no"></iframe>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 40px; background: linear-gradient(to bottom, #003c78, #007dc5);">_</button>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 70px; background: linear-gradient(to bottom, #003c78, #007dc5);">🗖</button> 
+                    <button class="close-btn" onclick="closeChatbot()">X</button>
+                    <iframe style="margin: 0;" src="./CostMonitoring.html" scrolling="no"></iframe>
                 </div>
             </div>
             <div style="bottom: 70%; right: 24%"> 
                 <button onclick="openExago()">
                     <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png"/>
-                    <p>exago</p>
+                    <p style="margin: 0;">exago</p>
                 </button>
 
                 <div id="overlay" onclick="closeExago()"></div>
                 <div class="popup" id="exago">
-                    <button class="close-btn" onclick="closeExago()">Close</button>
-                    <iframe src="./Exago.html" scrolling="no"></iframe>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 40px; background: linear-gradient(to bottom, #003c78, #007dc5);">_</button>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 70px; background: linear-gradient(to bottom, #003c78, #007dc5);">🗖</button> 
+                    <button class="close-btn" onclick="closeChatbot()">X</button>
+                    <iframe style="margin: 0;" src="./Exago.html" scrolling="no"></iframe>
                 </div>  
             </div>
             <div style="bottom: 47%; right: 18%">
                 <button onclick="openOneArmedBandit()">
                     <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png"/>
-                    <p>one_armed_bandit</p>
+                    <p style="margin: 0;">one_armed_bandit</p>
                 </button>
 
                 <div id="overlay" onclick="closeOneArmedBandit()"></div>
                 <div class="popup" id="one_armed_bandit">
-                    <button class="close-btn" onclick="closeOneArmedBandit()">Close</button>
-                    <iframe src="./OneArmedBandit.html" scrolling="no"></iframe>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 40px; background: linear-gradient(to bottom, #003c78, #007dc5);">_</button>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 70px; background: linear-gradient(to bottom, #003c78, #007dc5);">🗖</button> 
+                    <button class="close-btn" onclick="closeChatbot()">X</button>
+                    <iframe style="margin: 0;" src="./OneArmedBandit.html" scrolling="no"></iframe>
                 </div>
             </div>
             <div style="bottom: 45%; right: 76%">
                 <button onclick="openPlantify()">
                     <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png"/>
-                    <p>plantify</p>
+                    <p style="margin: 0;">plantify</p>
                 </button>
 
                 <div id="overlay" onclick="closePlantify()"></div>
                 <div class="popup" id="plantify">
-                    <button class="close-btn" onclick="closePlantify()">Close</button>
-                    <iframe src="./Plantify.html" scrolling="no"></iframe>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 40px; background: linear-gradient(to bottom, #003c78, #007dc5);">_</button>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 70px; background: linear-gradient(to bottom, #003c78, #007dc5);">🗖</button> 
+                    <button class="close-btn" onclick="closeChatbot()">X</button>
+                    <iframe style="margin: 0;" src="./Plantify.html" scrolling="no"></iframe>
                 </div>
             </div>
             <div style="bottom: 82%; right: 27%">
                 <button onclick="openReinforcementLearning()">
                     <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png"/> 
-                    <p>reinforcement_learning</p>
+                    <p style="margin: 0;">reinforcement_learning</p>
                 </button>
 
                 <div id="overlay" onclick="closeReinforcementLearning()"></div>
                 <div class="popup" id="reinforcement_learning">
-                    <button class="close-btn" onclick="closeReinforcementLearning()">Close</button>
-                    <iframe src="./ReinforcementLearning.html" scrolling="no"></iframe>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 40px; background: linear-gradient(to bottom, #003c78, #007dc5);">_</button>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 70px; background: linear-gradient(to bottom, #003c78, #007dc5);">🗖</button> 
+                    <button class="close-btn" onclick="closeChatbot()">X</button>
+                    <iframe style="margin: 0;" src="./ReinforcementLearning.html" scrolling="no"></iframe>
                 </div>  
             </div> 
-            <div style="bottom: 35%; right: 19%">
+            <!-- <div style="bottom: 35%; right: 19%">
                 <button onclick="openYouthCouncil()">
                     <img src="./resources/images-removebg-preview.png"/>
                     <p>youth_council</p>
@@ -251,44 +269,50 @@
 
                 <div id="overlay" onclick="closeYouthCouncil()"></div>
                 <div class="popup" id="youth_council">
-                    <button class="close-btn" onclick="closeYouthCouncil()">Close</button>
+                    <button class="close-btn" onclick="closeYouthCouncil()">X</button>
                     <iframe src="./YouthCouncil.html" scrolling="no"></iframe>
                 </div>
-            </div>
+            </div> -->
             <div style="bottom: 30%; right: 76%">
                 <button onclick="openLicense()">
                     <img src="./resources/worddoc-removebg-preview.png"/>
-                    <p>License</p>
+                    <p style="margin: 0;">License</p>
                 </button>
 
                 <div id="overlay" onclick="closeLicense()"></div>
                 <div class="popup" id="license">
-                    <button class="close-btn" onclick="closeLicense()">Close</button>
-                    <iframe src="./License.html" scrolling="no"></iframe>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 40px; background: linear-gradient(to bottom, #003c78, #007dc5);">_</button>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 70px; background: linear-gradient(to bottom, #003c78, #007dc5);">🗖</button> 
+                    <button class="close-btn" onclick="closeChatbot()">X</button>
+                    <iframe style="margin: 0;" src="./License.html" scrolling="no"></iframe>
                 </div>  
             </div>
             <div style="bottom: 47%; right: 13%">
                 <button onclick="openAbout()">
                     <img src="./resources/worddoc-removebg-preview.png"/>
-                    <p>About</p>
+                    <p style="margin: 0;">About</p>
                 </button>
 
                 <div id="overlay" onclick="closeAbout()"></div>
                 <div class="popup" id="about">
-                    <button class="close-btn" onclick="closeAbout()">Close</button>
-                    <iframe src="./About.html" scrolling="no"></iframe>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 40px; background: linear-gradient(to bottom, #003c78, #007dc5);">_</button>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 70px; background: linear-gradient(to bottom, #003c78, #007dc5);">🗖</button> 
+                    <button class="close-btn" onclick="closeChatbot()">X</button>
+                    <iframe style="margin: 0;" src="./About.html" scrolling="no"></iframe>
                 </div>
             </div>
         </main> 
 
     <footer>
-        <button style="height: 5vh; background: none; border: none;" onclick="openStart()">
-            <img src="./resources/start-button.png" alt="start button">
+        <button id="green-start-button" onclick="openStart()">
+            <img style="height: 27px; margin: 0;" src="./resources/start-button.png" alt="start button">
         </button>
 
         <div id="overlay" onclick="closeStart()"></div>
         <div id="start">
-            <button class="close-btn" onclick="closeStart()">Close</button>
+            <button class="close-btn" style="position: absolute; top: 9px; right: 40px; background: linear-gradient(to bottom, #003c78, #007dc5);">_</button>
+                    <button class="close-btn" style="position: absolute; top: 9px; right: 70px; background: linear-gradient(to bottom, #003c78, #007dc5);">🗖</button> 
+                    <button class="close-btn" onclick="closeChatbot()">X</button>
             <iframe src="./StartMenu.html" scrolling="no"></iframe>
         </div>
         <div id="icons"> 

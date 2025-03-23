@@ -7,6 +7,7 @@
         <meta name="HandheldFriendly" content="true"> 
         <link href="./css/FileExplorer.css" rel="stylesheet">
         <link href="./css/Global.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/xp.css">
     </head>
     <body>
         <main> 
@@ -61,7 +62,7 @@
                             <p>Search</p>
                         </div>
                         <div id="icon" style="background-color: white; border: 1px solid blue; padding: 0.1rem; border-radius: 5px; width: 6rem; height: 3rem;">
-                            <img src="./resources/folders.png" alt='folders'></img>
+                            <img src="./resources/folders.png" alt='folders'/>
                             <p>Folders</p>
                         </div> 
                     </div> 
@@ -91,7 +92,63 @@
             </div>
 
             <div id='middle'>
-                <section id="sidebar">
+                <section id="sidebar" style="text-align: left; background-color:  rgb(110, 162, 231);">
+                    <div style="display: flex; flex-direction: column;">
+                        <div class="header" style="background: linear-gradient(90deg, rgba(240,245,249,1) 57%, rgba(240,245,249,0.5852272727272727) 100%); display: flex; align-items: center; justify-content: space-between;">
+                            <p>File and Folder Tasks</p>
+                            <img style="height: 1.5rem;" src="./resources/folders.png" alt='folders'/>
+                        </div>
+                        <div style="background-color: #f0f5f96c; border: 1px solid white;">
+                            <div style="display: flex; align-items: center;">
+                                <img style="height: 1.5rem;" src="./resources/folders.png" alt='folders'/>
+                                <p>Make a new folder</p>
+                            </div>
+                            <div style="display: flex; align-items: center;">
+                                <img style="height: 1.5rem;" src="./resources/folders.png" alt='folders'/>
+                                <p>Publish a folder to the Web</p>
+                            </div>
+                            <div style="display: flex; align-items: center;">
+                                <img style="height: 1.5rem;" src="./resources/folders.png" alt='folders'/>
+                                <p>Share this folder</p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <div class="header" style="background: linear-gradient(90deg, rgba(240,245,249,1) 57%, rgba(240,245,249,0.5852272727272727) 100%); display: flex; align-items: center; justify-content: space-between;">
+                            <p>Other Places</p>
+                            <img style="height: 1.5rem;" src="./resources/folders.png" alt='folders'/>
+                        </div>
+                        <div style="background-color: #f0f5f96c; border: 1px solid white;">
+                            <div style="display: flex; align-items: center;">
+                                <img style="height: 1.5rem;" src="./resources/folders.png" alt='folders'/>
+                                <p>Documents and Settings</p>
+                            </div>
+                            <div style="display: flex; align-items: center;">
+                                <img style="height: 1.5rem;" src="./resources/folders.png" alt='folders'/>
+                                <p>My Documents</p>
+                            </div>
+                            <div style="display: flex; align-items: center;">
+                                <img style="height: 1.5rem;" src="./resources/folders.png" alt='folders'/>
+                                <p>Shared Docuements</p>
+                            </div>
+                            <div style="display: flex; align-items: center;">
+                                <img style="height: 1.5rem;" src="./resources/folders.png" alt='folders'/>
+                                <p>My Computer</p>
+                            </div>
+                            <div style="display: flex; align-items: center;">
+                                <img style="height: 1.5rem;" src="./resources/folders.png" alt='folders'/>
+                                <p>My Network Places</p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <div class="header" style="background: linear-gradient(90deg, rgba(240,245,249,1) 57%, rgba(240,245,249,0.5852272727272727) 100%); display: flex; align-items: center; justify-content: space-between;">
+                            <p>Details</p>
+                            <img style="height: 1.5rem;" src="./resources/folders.png" alt='folders'/>
+                        </div>
+                    </div> 
+                </section>
+                <!-- <section id="sidebar">
                     <div id="folderssidebar">
                         <p>Folders</p>
                         <button>x</button>
@@ -155,12 +212,12 @@
                         <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png"/>
                         <p>Backgammon</p>
                     </div>
-                    <div>
+                    <!-- <div>
                         <button>+</button>
                         <img src="./resources/images-removebg-preview.png"/>
                         <p>Youth Council</p>
-                    </div>
-                    <div>
+                    </div> -->
+                    <!-- <div>
                         <button>+</button>
                         <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png"/>
                         <p>Reinforcement Learning</p>
@@ -185,15 +242,15 @@
                         <img src="https://cdn.pixabay.com/photo/2015/03/21/06/27/recycle-bin-683244_640.png"/>
                         <p>Recicle bin</p>
                     </div>
-                </section>
+                </section> -->
 
                 <section id="folders">
                     <div class="cost-monitoring">
-                        <img src="./resources/alert_icon.png" alt="icon"></img>
+                        <img src="./resources/alert_icon.png" alt="icon"/>
                         <a href="./CostMonitoring.html">Cloud and Cost Monitoring</a>
                     </div>
                     <div class="chatbot" id='work'>
-                        <img src="./resources/download.png" alt="icon"></img>
+                        <img src="./resources/download.png" alt="icon"/>
                         <a href="./Chatbot.html">Data Science Chatbot</a> 
                     </div>
                     <div class="exago" id='work'>
@@ -216,10 +273,10 @@
                         <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png" alt="icon"></img>
                         <a href="./Backgammon.html">Backgammon</a> 
                     </div>
-                    <div class="youth-council" id='work'>
+                    <!-- <div class="youth-council" id='work'>
                         <img src="./resources/images-removebg-preview.png" alt="icon"></img>
                         <a href="./YouthCouncil.html">Youth Council</a> 
-                    </div>
+                    </div> -->
                     <div class="reinforcement-learning" id='work'>
                         <img src="./resources/windows-xp-games-v0-a8i9k6esrwnc1-removebg-preview.png" alt="icon"></img>
                         <a href="./ReinforcementLearning.html">Reinforcement Learning</a> 
